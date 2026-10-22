@@ -143,6 +143,7 @@
   // ---- Parody mode ----
 
   let pyodideInstance = null;
+  let conversationCount = 0;
 
   async function loadPyodideAndNltk(statusEl) {
     statusEl.classList.remove("hidden");
@@ -166,6 +167,8 @@
     pyodideInstance.FS.mkdirTree("/app/data");
     pyodideInstance.FS.writeFile("/app/madlib.py", madlibPy);
     pyodideInstance.FS.writeFile("/app/data/templates.json", templatesJson);
+
+    conversationCount = JSON.parse(templatesJson).mini_conversations.length;
 
     pyodideInstance.runPython(`
 import sys
@@ -244,16 +247,10 @@ importlib.reload(madlib)
 
     await printBubble(chat, "bot", session.first_answer);
 
-    // Work through mini-conversation threads forever, avoiding repeating
-    // the same thread twice in a row.
-    let lastConvIndex = -1;
-    while (true) {
-      let convIndex = Math.floor(Math.random() * 10);
-      if (convIndex === lastConvIndex) {
-        convIndex = (convIndex + 1) % 10;
-      }
-      lastConvIndex = convIndex;
-
+    // Work through every mini-conversation thread exactly once, in a
+    // shuffled order, then end the session — no thread repeats.
+    const remainingIndices = shuffledRange(conversationCount);
+    for (const convIndex of remainingIndices) {
       const convo = generateMiniConversation(question, convIndex);
       for (const turn of convo.turns) {
         await sleep(500 + Math.random() * 400);
@@ -264,6 +261,18 @@ importlib.reload(madlib)
         }
       }
     }
+
+    await sleep(700);
+    await printSystemNotice(chat, "Tokens exhausted.");
+  }
+
+  function shuffledRange(n) {
+    const arr = Array.from({ length: n }, (_, i) => i);
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
   }
 
   function generateSession(question) {
@@ -337,5 +346,13 @@ madlib.generate_mini_conversation(json.loads(${JSON.stringify(escaped)}), _templ
     }
 
     caret.remove();
+  }
+
+  async function printSystemNotice(chat, text) {
+    const notice = document.createElement("div");
+    notice.className = "bubble system-notice";
+    notice.textContent = text;
+    chat.appendChild(notice);
+    scrollChatToBottom();
   }
 })();
