@@ -441,27 +441,28 @@ madlib.generate_answer(json.loads(${JSON.stringify(escaped)}), _templates)
     }
   }
 
-  // Simulates a plausible human typist: a pause before they start (reading
-  // and reacting), then character-by-character entry, roughly half the
-  // speed of the original fast-typist version, with a blinking caret and
-  // the occasional brief pause (thinking, or hitting backspace-and-retype)
-  // rather than perfectly even spacing.
+  // Simulates a plausible human typist, but in the composer at the bottom
+  // of the screen rather than directly in the chat log: a pause before
+  // they start (reading and reacting), then character-by-character entry
+  // into the composer with a blinking caret, roughly half the speed of the
+  // original fast-typist version, with the occasional brief pause
+  // (thinking, or hitting backspace-and-retype) rather than perfectly even
+  // spacing. Once finished, the composer clears and the finished message
+  // appears as a new bubble in the chat, like it was just "sent".
   async function printBubbleTyped(chat, role, text) {
     await sleep(700 + Math.random() * 900);
 
-    const bubble = document.createElement("div");
-    bubble.className = "bubble " + role;
-    const textSpan = document.createElement("span");
+    const composerText = document.getElementById("composer-text");
+    const inputBox = composerText.parentElement;
+    composerText.classList.remove("placeholder");
+    composerText.textContent = "";
+
     const caret = document.createElement("span");
     caret.className = "cursor-caret";
-    bubble.appendChild(textSpan);
-    bubble.appendChild(caret);
-    chat.appendChild(bubble);
-    scrollChatToBottom();
+    inputBox.appendChild(caret);
 
     for (let i = 0; i < text.length; i++) {
-      textSpan.textContent = text.slice(0, i + 1);
-      scrollChatToBottom();
+      composerText.textContent = text.slice(0, i + 1);
       let delay = 32 + Math.random() * 56;
       if (" ,.!?".includes(text[i])) {
         delay += Math.random() * 180;
@@ -469,7 +470,13 @@ madlib.generate_answer(json.loads(${JSON.stringify(escaped)}), _templates)
       await sleep(delay);
     }
 
+    await sleep(300 + Math.random() * 300);
     caret.remove();
+
+    composerText.textContent = "Claude is not actually listening…";
+    composerText.classList.add("placeholder");
+
+    await printBubble(chat, role, text, { instant: true });
   }
 
   async function printSystemNotice(chat, text) {
