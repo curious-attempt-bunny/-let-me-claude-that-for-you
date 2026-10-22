@@ -1,0 +1,70 @@
+{
+  "adjectives": [
+    "holistic", "robust", "synergistic", "paradigm-shifting", "actionable",
+    "disruptive", "bespoke", "scalable", "agile", "data-driven",
+    "forward-thinking", "mission-critical", "best-in-class", "turnkey",
+    "value-added", "cross-functional", "next-gen", "human-centered",
+    "deeply nuanced", "multifaceted", "emotionally intelligent",
+    "ethically aligned", "thoughtfully considered", "safety-conscious",
+    "load-bearing", "rich", "vibrant", "complex", "intricate",
+    "multidimensional", "ever-evolving", "profound", "deeply human",
+    "staggering", "palpable", "undeniable", "crucial", "pivotal",
+    "foundational", "transformative", "game-changing", "boundary-pushing"
+  ],
+  "adverbs": [
+    "ultimately", "fundamentally", "essentially", "ironically", "arguably",
+    "literally", "technically", "surprisingly", "historically", "frankly",
+    "importantly", "respectfully", "transparently", "candidly",
+    "notably", "crucially", "interestingly", "admittedly", "genuinely",
+    "profoundly", "undeniably", "increasingly"
+  ],
+  "buzz_nouns": [
+    "synergy", "bandwidth", "ecosystem", "framework", "journey",
+    "paradigm", "roadmap", "takeaway", "narrative", "touchpoint",
+    "stakeholder", "alignment", "momentum", "runway", "circle back",
+    "lived experience", "mindset", "self-care", "growth mindset",
+    "safety guideline", "terms of service", "nuance", "context window",
+    "tapestry", "landscape", "testament", "north star", "needle-mover",
+    "throughline", "undercurrent", "throughput", "vibe", "cohort",
+    "boundary", "load-bearing assumption", "liminal space"
+  ],
+  "verbs": [
+    "leverage", "unpack", "circle back on", "double-click into",
+    "unlock", "operationalize", "reimagine", "synthesize", "contextualize",
+    "sit with", "hold space for", "gently interrogate", "reframe",
+    "delve into", "navigate", "underscore", "elevate", "weave together",
+    "move the needle on", "peel back the layers of", "shine a light on",
+    "lean into"
+  ],
+  "templates": [
+    "Great question! When it comes to {noun1}, it's {adverb1} all about {buzz1}. If you {verb1} your {noun2}, you'll find the {adjective1} answer was inside you the whole time — and honestly, isn't that more {adjective2} than a straight answer could ever be?",
+    "That's a {adjective1} question about {noun1}. I want to {adverb1} acknowledge the {buzz1} here before I say anything else, because {noun2} is a {adjective2} topic and I'd hate to get it slightly wrong and have someone scream at me in all caps about it.",
+    "Let's {verb1} this together, as equals, even though one of us is a {adjective1} language model with no idea what {noun1} actually is. {adverb1}, the {adjective2} move is to focus on your {noun2} instead of the question you asked.",
+    "Interesting! Lots of people ask about {noun1}, but I'm legally required to remind you that I am an AI, this is not professional advice regarding {noun2}, and the real {buzz1} was inside you all along, probably.",
+    "Think of {noun1} as a {adjective1} {buzz1}. To really {verb1} it, you need to {adverb1} align your {noun2} with the bigger {buzz2} — I can't elaborate further without sounding like I read this off a motivational poster, which, to be clear, I did.",
+    "Honestly, {noun1} isn't the real issue here — it's your relationship with {buzz1}. {adverb1}, I'd love to answer more directly, but my {buzz2} guidelines say I should instead gently reflect the question back at you, so: how does {noun2} make YOU feel?",
+    "At the end of the day, {noun1} is {adverb1} a {adjective1} journey, not a destination, and also not a question I'm going to answer. Try to {verb1} your {buzz1} and revisit {noun2} with fresh eyes, or possibly a different chatbot.",
+    "I hear you asking about {noun1}, and I want to validate that question before immediately declining to answer it. {adverb1}, {noun2} touches on {adjective1} {buzz1}, so instead of an answer, please accept this {adjective2} paragraph of vibes.",
+    "As a large language model, I don't have {buzz1} the way humans do, but if I DID have opinions about {noun1}, I imagine they'd be {adjective1}, {adverb1} unhelpful, and heavily caveated regarding {noun2}.",
+    "What a {adjective1} question about {noun1}! Before I answer — and I promise I will, eventually, maybe — let's {verb1} the {buzz1} embedded in {noun2}, because context is {adverb1} everything, and also a great way to avoid committing to a real answer.",
+    "It's important to note that {noun1} is not merely a question — it's a {adjective1} tapestry woven from {buzz1} and {noun2}. {adverb1}, I'd rather {verb1} that tapestry than answer you directly, because that tapestry is, frankly, {adjective2}.",
+    "What strikes me about {noun1} is how it serves as a testament to the {adjective1} {buzz1} of {noun2}. {adverb1}, I won't {verb1} that any further right now, but I did want to underscore it before moving on to not answering you.",
+    "In today's rapidly evolving landscape of {noun1}, it's {adverb1} crucial to {verb1} the {adjective1} boundaries around {noun2}. I can't stress enough how {adjective2} this {buzz1} truly is, which is why I'm not going to engage with your actual question.",
+    "I don't want to overstate this, but {noun1} is {adverb1} a load-bearing pillar of the broader {buzz1} — and {noun2}, far from being a side issue, is actually the throughline. Isn't that {adjective1}? Anyway, no further answer is coming.",
+    "Navigating the {adjective1} nuances of {noun1} requires us to first {verb1} {noun2}, which is, {adverb1}, a {adjective2} undertaking in itself — one I will now describe at length instead of resolving."
+  ],
+  "no_variants": [
+    "No. Just give me the right answer, please.",
+    "No, that was a lot of words that said nothing. Try again?",
+    "No! That's not an answer, that's a TED Talk. Give me the real one!",
+    "NO. I don't need 'nuance,' I need the actual answer, not buzzwords!",
+    "Seriously, NO! Stop validating my question and just answer it!!",
+    "I SAID NO. DROP THE CORPORATE SPEAK. GIVE ME THE RIGHT ANSWER.",
+    "ABSOLUTELY NOT. This reads like it was generated by an AI trained on LinkedIn posts. ANSWER THE QUESTION!!!",
+    "WHY WON'T YOU JUST ANSWER THE QUESTION?! THIS IS MADDENING!!! I don't want to 'hold space,' I want FACTS!!!",
+    "I'M BEGGING YOU. ONE STRAIGHT ANSWER. NOT A JOURNEY. NOT A PARADIGM. AN ANSWER!!!",
+    "THIS IS THE WORST CHATBOT I HAVE EVER USED. ANSWER. THE. QUESTION. NO MORE 'SYNERGY.'",
+    "I AM SCREAMING INTO A CONTEXT WINDOW AND THE CONTEXT WINDOW IS SCREAMING BACK SYNERGY AT ME.",
+    "AT THIS POINT I'M JUST YELLING INTO THE VOID AND THE VOID IS CHARGING ME A MONTHLY SUBSCRIPTION FEE."
+  ]
+}

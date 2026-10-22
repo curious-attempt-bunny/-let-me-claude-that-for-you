@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Let Me Claude That For You</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrap">
+  <div class="splat"></div>
+  <div class="title">Let Me <span class="accent">Claude</span> That For You</div>
+
+  <!-- Landing view: ask a question, get a link -->
+  <section id="landing-view">
+    <p class="subtitle">Type the question your friend should have just asked an AI themselves.</p>
+    <form id="ask-form" class="input-box" style="margin-top: 16px;">
+      <input id="question-input" type="text" placeholder="What do you want to know?" autocomplete="off" />
+      <button type="submit" class="send-btn" aria-label="Generate link">&#8599;</button>
+    </form>
+    <div id="link-result" class="actions hidden" style="margin-top: 16px;">
+      <button id="copy-link-btn" class="btn primary">Copy Link</button>
+      <span id="copy-status" class="status"></span>
+    </div>
+  </section>
+
+  <!-- Shared-link view: animated mouse + typing + buttons -->
+  <section id="shared-view" class="hidden" style="width:100%;">
+    <div class="mouse-stage" id="mouse-stage">
+      <div class="input-box" id="typing-box">
+        <span class="typed-text" id="typed-text"></span>
+      </div>
+      <div class="cursor" id="cursor">
+        <svg viewBox="0 0 24 24" fill="#2d2a26"><path d="M4 2 L4 20 L8.5 16.5 L11 22 L13.5 21 L11 15.5 L17 15.5 Z"/></svg>
+      </div>
+    </div>
+    <div class="actions" id="post-type-actions" style="margin-top: 20px;">
+      <button id="ask-claude-btn" class="btn primary hidden">Ask Claude</button>
+      <button id="parody-btn" class="btn hidden">Parody Answer</button>
+    </div>
+  </section>
+
+  <footer class="note" id="page-footer">Unofficial parody. Not affiliated with Anthropic. "Claude" and "claude.ai" belong to their respective owner.</footer>
+</div>
+
+<!-- Full-screen parody chat mode, styled like claude.ai's chat view -->
+<div id="parody-fullscreen" class="parody-fullscreen hidden">
+  <header class="chat-header">
+    <div class="chat-header-brand">
+      <div class="splat small"></div>
+      <span>Let Me <span class="accent">Claude</span> That For You</span>
+    </div>
+  </header>
+  <div class="chat-scroll" id="chat-scroll">
+    <div class="chat" id="chat"></div>
+    <div id="loading-status" class="status hidden">Loading parody-answer engine&hellip;</div>
+  </div>
+  <div class="chat-composer">
+    <div class="input-box">
+      <span class="typed-text placeholder">Claude is not actually listening&hellip;</span>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
