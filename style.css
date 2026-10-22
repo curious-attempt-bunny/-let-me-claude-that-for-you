@@ -262,6 +262,25 @@ body {
   background: var(--bubble-bot);
   border: 1px solid var(--border);
 }
+.bubble.bot p {
+  margin: 0 0 8px 0;
+}
+.bubble.bot p:last-child {
+  margin-bottom: 0;
+}
+.bubble.bot ul {
+  margin: 4px 0 8px 0;
+  padding-left: 1.25em;
+}
+.bubble.bot ul:last-child {
+  margin-bottom: 0;
+}
+.bubble.bot li {
+  margin: 2px 0;
+}
+.bubble.bot strong {
+  font-weight: 700;
+}
 .bubble.user {
   align-self: flex-end;
   background: var(--bubble-user);

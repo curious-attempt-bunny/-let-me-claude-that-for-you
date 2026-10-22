@@ -1,4 +1,34 @@
 {
+  "bridge_lines": {
+    "human": [
+      "Different question, then.",
+      "Okay, moving on.",
+      "Let's try something else.",
+      "New topic.",
+      "Forget it. Next.",
+      "Let's just move on."
+    ],
+    "bot": [
+      "Sure, go ahead.",
+      "Noted. What's next?",
+      "Understood — continuing.",
+      "Happy to keep going.",
+      "Alright, next topic.",
+      "Go ahead, I'm listening."
+    ]
+  },
+  "generic_pushback": [
+    "That doesn't answer it.",
+    "Still not what I asked.",
+    "Can you be direct?",
+    "That's not an answer.",
+    "Try again, please.",
+    "I need something concrete.",
+    "That didn't help at all.",
+    "Just answer the question.",
+    "No. Try again.",
+    "That's not it either."
+  ],
   "adjectives": [
     "actionable",
     "adaptive",
@@ -799,45 +829,45 @@
     "workshop"
   ],
   "templates": [
-    "Great question! When it comes to {noun1}, it's {adverb1} all about {buzz1}. A lot of people rush straight past this and go looking for a tidy answer, but the tidy answer is almost never the honest one. If you take a moment to {verb1} your {noun2}, you'll likely find the {adjective1} answer was inside you the whole time. And honestly, isn't that more {adjective2} than a straight answer could ever be?",
-    "That's a {adjective1} question about {noun1}, and I want to slow down before I say anything else. There's a real risk of oversimplifying {noun2} here, and I'd rather acknowledge the {buzz1} up front than rush into something that sounds confident but falls apart under scrutiny. {noun2} is a {adjective2} topic, frankly, and getting it slightly wrong tends to invite a very specific kind of reaction. So let's proceed carefully.",
-    "Let's {verb1} this together, as equals, even though one of us is a {adjective1} language model with no real grounding in what {noun1} actually is day to day. {adverb1}, I think the more {adjective2} move is to set {noun1} aside for a moment and focus on your {noun2} instead. It's not that your original question was wrong, exactly — it's more that {noun2} is doing a lot of quiet work underneath it, and that seems like the more productive place to spend our time.",
-    "Interesting! Lots of people ask about {noun1}, and it's worth saying up front that I'm an AI, this isn't professional advice, and {noun2} in particular deserves more nuance than a quick answer can really provide. {adverb1}, the honest version of this response is that the real {buzz1} was inside you all along — which I know sounds like a dodge, and it is one, but it's also, in a strange way, kind of true.",
-    "Think of {noun1} as a {adjective1} {buzz1} rather than a problem to be solved outright. To really {verb1} it, you'd need to {adverb1} align your {noun2} with the bigger {buzz2} sitting underneath the whole situation, and that's not something that happens in one sitting. I can't elaborate much further without sounding like I read this off a motivational poster in a dentist's waiting room, which, to be clear, I did.",
-    "Honestly, {noun1} isn't the real issue here — it's your relationship with {buzz1}, and I think it's worth naming that directly. {adverb1}, I'd love to answer more directly, but my internal {buzz2} guidelines nudge me toward reflecting the question back at you instead of just handing over an answer. So, genuinely: how does {noun2} make you feel, and what does that feeling tell you about where you actually want this to go?",
-    "At the end of the day, {noun1} is {adverb1} a {adjective1} journey rather than a destination, and I say that fully aware of how it sounds. It's also, candidly, not a question I'm going to answer in the way you're hoping. What I'd suggest instead is that you {verb1} your {buzz1} and revisit {noun2} with fresh eyes — ideally tomorrow, ideally with coffee, and ideally with a different chatbot if this one keeps failing you.",
-    "I hear you asking about {noun1}, and before I do anything else I want to validate that it's a completely reasonable thing to ask. {adverb1}, {noun2} touches on {adjective1} {buzz1} in ways that aren't obvious from the outside, and unpacking all of that properly would take far longer than either of us probably has right now. So instead of a tidy answer, please accept this {adjective2} paragraph of vibes in its place — it's not nothing, even if it isn't quite what you came here for.",
-    "As a large language model, I don't have {buzz1} in the way humans do, and I think that's actually relevant context for this question. If I DID have opinions about {noun1}, though, I imagine they'd be {adjective1}, {adverb1} unhelpful, and heavily caveated regarding {noun2} in ways that would frustrate you almost as much as this answer already has. There's a certain honesty in admitting that up front, at least.",
-    "What a {adjective1} question about {noun1}! Before I answer — and I do promise I will, eventually, maybe, under the right conditions — I think it's worth pausing to {verb1} the {buzz1} embedded in {noun2}, because context is {adverb1} everything in situations like this. It's also, conveniently, a pretty effective way to avoid committing to a real answer for another paragraph or two, which I'll admit is part of the appeal.",
-    "It's important to note that {noun1} is not merely a question — it's a {adjective1} tapestry woven from {buzz1} and {noun2}, and treating it as a single, discrete thing does it a disservice. {adverb1}, I'd honestly rather sit with that tapestry for a while than answer you directly, because that tapestry is, frankly, {adjective2} in ways that a quick answer would flatten completely.",
-    "What strikes me about {noun1} is how it serves as a kind of testament to the {adjective1} {buzz1} running underneath {noun2}. {adverb1}, I won't {verb1} that any further right now — partly for time, partly because I think you'd benefit from sitting with it yourself — but I did want to underscore it clearly before we move on to the part where I still don't quite answer your question.",
-    "In today's rapidly evolving landscape of {noun1}, it's {adverb1} crucial to {verb1} the {adjective1} boundaries forming around {noun2} before they calcify into something harder to work with. I can't stress enough how {adjective2} this {buzz1} truly is, and that's exactly why I'm choosing not to engage with your actual question directly — not out of avoidance, but out of respect for how complicated the real picture is.",
-    "I don't want to overstate this, but {noun1} is {adverb1} a load-bearing pillar of the broader {buzz1} holding everything else up. {noun2}, far from being a side issue the way it might first appear, is actually the throughline connecting all of it together. Isn't that {adjective1}, in its own strange way? Anyway, I should say plainly: no further answer is coming after this paragraph.",
-    "Navigating the {adjective1} nuances of {noun1} requires us to first {verb1} {noun2}, which is, {adverb1}, a {adjective2} undertaking in itself and not one I'd recommend rushing. There's a tendency to want a shortcut here, and I understand the impulse, but shortcuts tend to produce exactly the kind of shallow answer that leaves people more frustrated than when they started. So instead, I'll describe the undertaking at length rather than resolving it.",
+    "Great question about {noun1}! Let's break this down:\n\n- **Context:** {noun1} rarely exists in isolation — it's tangled up with {buzz1} more than people expect.\n- **The Nuance:** {noun2} looks separate, but it's {adverb1} downstream of the same thing.\n- **Next Step:** {verb1} your {noun2} before chasing a quick fix.\n\nIn short, the {adjective1} answer was inside you the whole time.",
+    "That's a {adjective1} question about {noun1}, and I want to slow down before answering. {noun2} is a {adjective2} topic, frankly, not a yes-or-no one, and {buzz1} shapes the outcome more than {noun2} does on its own. Getting this wrong invites a very specific kind of reaction online, so I'd honestly rather be thorough than fast here, even if that means taking the scenic route to get there.",
+    "Let's {verb1} this together, as equals, even though I'm a {adjective1} language model with no lived sense of {noun1}:\n\n- **Reality Check:** {noun2} is doing more work than the question implies.\n- **Perspective Shift:** {adverb1}, the {buzz1} underneath matters more than the surface.\n- **Bottom Line:** focus on {noun2}, not the original question.\n\nAt the end of the day, that's the {adjective2} move.",
+    "Interesting question about {noun1}! A quick disclaimer first: I'm an AI, this isn't professional advice, and {noun2} deserves more care than a quick answer tends to give it. {adverb1}, if I'm being fully honest with you, the real {buzz1} was probably inside you all along — which I realize sounds like a dodge, mostly because it is one, but I still think it holds up.",
+    "Think of {noun1} as a {adjective1} {buzz1} rather than a single fixed thing:\n\n- **Step One:** {verb1} it, slowly, without rushing to conclusions.\n- **Step Two:** {adverb1} align your {noun2} with the bigger {buzz2}.\n- **Step Three:** accept that there isn't a tidy finish line here.\n\nIn summary, that's about as far as I can go without sounding like a motivational poster — which, to be clear, I did.",
+    "Honestly, {noun1} isn't the real issue here. The real issue is your relationship with {buzz1}, and {adverb1}, I'd love to answer more directly, but my guidelines nudge me toward reflecting questions back rather than answering them outright. So, genuinely: how does {noun2} make YOU feel, and what does that feeling tell you about where you actually want this conversation to go?",
+    "At the end of the day, {noun1} is {adverb1} a {adjective1} journey rather than a destination. Three things to hold onto:\n\n- **It's Not Linear:** progress on {noun2} won't look like a straight line.\n- **Fresh Eyes Help:** revisit {buzz1} tomorrow, ideally with coffee.\n- **This Isn't The Answer:** I know, I know.\n\nIn short: try a different chatbot if this one keeps failing you.",
+    "I hear you asking about {noun1}, and before anything else, I want to validate that it's a completely reasonable thing to ask. {adverb1}, {noun2} touches on {adjective1} {buzz1} in ways that aren't obvious from the outside, and unpacking all of that properly would take longer than either of us probably has right now. So instead of a tidy answer, please accept this {adjective2} paragraph of vibes — not nothing, even if it isn't quite what you came here for.",
+    "As a large language model, I don't have {buzz1} the way humans do. Still, here's my attempt at a structured take:\n\n- **If I Did:** my opinions would be {adjective1} and {adverb1} unhelpful.\n- **Regarding {noun1}:** heavily caveated, as always.\n- **Regarding {noun2}:** see above, basically.\n\nIn conclusion, there's a certain honesty in admitting all of that up front.",
+    "What a {adjective1} question about {noun1}! Before I answer — and I promise I will, eventually, maybe — {adverb1}, context is everything here, and {buzz1} is woven directly into {noun2} in ways that are worth naming up front. This is also, admittedly, a convenient way to avoid committing to an answer just yet, which I'll own honestly rather than pretend otherwise.",
+    "It's important to note that {noun1} is not merely a question — it's a {adjective1} tapestry. Let's trace the threads:\n\n- **Thread One:** {buzz1}, running underneath everything.\n- **Thread Two:** {noun2}, woven in tightly beside it.\n- **The Weave:** {adverb1}, I'd rather sit with the tapestry than answer directly.\n\nIn short, that tapestry is, frankly, {adjective2}.",
+    "What strikes me about {noun1} is how it serves as a kind of testament to the {adjective1} {buzz1} running beneath {noun2}. {adverb1}, I won't {verb1} that any further right now — partly for time, partly because I think you'd benefit from sitting with it yourself — but I did want to underscore it clearly before we move on to the part where I still don't quite answer your question.",
+    "In today's rapidly evolving landscape of {noun1}, three things are {adverb1} crucial:\n\n- **Boundary-Setting:** {verb1} the {adjective1} boundaries forming around {noun2}.\n- **Urgency:** this {buzz1} is more pressing than it looks.\n- **Honesty:** that's exactly why I'm not engaging with your actual question directly.\n\nIn short, I'd rather name the complexity than fake a simple answer.",
+    "I don't want to overstate this, but {noun1} is {adverb1} a load-bearing pillar of something larger, and {noun2}, far from being a side issue the way it might first appear, is actually the throughline connecting everything together. Isn't that {adjective1}, in its own strange way? Anyway, I should say plainly: no further answer is coming after this paragraph.",
+    "Navigating the {adjective1} nuances of {noun1} requires a few deliberate steps:\n\n- **First:** {verb1} {noun2} before anything else.\n- **Second:** resist the urge to shortcut this part.\n- **Third:** accept that shortcuts produce shallow answers.\n\nIn conclusion, I'll describe the undertaking at length rather than resolving it — that's {adverb1} the {adjective2} version of helpful.",
     "I want to sit with {noun1} for a second before answering, because {noun2} deserves more than a quick take and I'd rather not shortchange it. {adverb1}, the {adjective1} version of the story is that {buzz1} is doing far more work here than most people realize, quietly shaping the outcome long before anyone notices it's involved. I think that's worth naming clearly, even if it doesn't resolve anything on its own.",
-    "So, {noun1}. {adverb1}, I think the more interesting question underneath this one is what {noun2} is really asking of you, and I don't say that to dodge the original question — though I recognize it probably reads that way. It's a {adjective1} {buzz1} question in its own right, one that tends to get skipped over in the rush to answer the surface-level version first.",
+    "So, {noun1}. {adverb1}, I think there's a more interesting question underneath. Let's lay it out:\n\n- **Surface Question:** what you literally asked.\n- **Real Question:** what {noun2} is actually asking of you.\n- **Why It Matters:** it's a {adjective1} {buzz1} question in its own right.\n\nIn short, I'm not dodging — I'm redirecting, which I recognize looks similar.",
     "{noun1} is one of those topics where the obvious answer and the {adjective1} answer tend to diverge sharply, and most people only ever hear the obvious one. I'll {verb1} the obvious answer here and leave you instead with the {buzz1} underneath it, which I think is ultimately more useful, even if it's less immediately satisfying than a clean, confident response would be.",
-    "You could spend a long time on {noun1} — people do, regularly, and rarely come away with a cleaner answer than when they started. {adverb1}, the short version is this: {noun2} and {buzz1} are, functionally, the same problem wearing different outfits depending on the day. Recognizing that doesn't solve anything immediately, but it does at least save you from chasing two problems that were really only ever one.",
+    "You could spend a long time on {noun1} — people do, regularly. Here's the short version, structured:\n\n- **Problem One:** {noun2}.\n- **Problem Two:** {buzz1}.\n- **The Twist:** {adverb1}, they're the same problem wearing different outfits.\n\nIn conclusion, recognizing that saves you from chasing two problems that were always one.",
     "I don't think {noun1} is really about {noun2} at all, even though that's usually where the conversation starts. {adverb1}, it's about {buzz1} — and once you see that clearly, the original question has a way of dissolving into something much simpler, or possibly much harder, depending on how you look at it. Either way, I don't think the original framing was quite right to begin with.",
-    "Before I answer about {noun1}: have you considered that {noun2} might actually be a {adjective1} symptom of a bigger {buzz1} rather than the root issue itself? I ask because a lot of the frustration people bring to questions like this comes from treating the symptom as the whole problem. Just something to {verb1} before we go any further, since it might reshape the rest of this conversation entirely.",
+    "Before I answer about {noun1}, let's consider three possibilities:\n\n- **Possibility One:** {noun2} is the root cause.\n- **Possibility Two:** {noun2} is a {adjective1} symptom of {buzz1}.\n- **Possibility Three:** both, simultaneously, somehow.\n\nJust something to {verb1} before we go further — it might reshape the rest of this conversation entirely.",
     "{adverb1} speaking, {noun1} is less a question and more an invitation to {verb1} your {buzz1}, even if it didn't arrive labeled that way. {noun2} is just where the invitation happened to land this time — it could just as easily have shown up somewhere else, and probably has before, in a slightly different costume. I think that reframing matters more than it first appears to.",
-    "People ask about {noun1} expecting a formula, something repeatable and clean, and I understand why — formulas are comforting. {adverb1}, there isn't one here, just a {adjective1} {buzz1} that you {verb1} over time, with {noun2} along for the ride the whole way. I wish I had a tidier answer, but I'd rather be honest about the absence of a formula than invent one that doesn't hold up.",
+    "People ask about {noun1} expecting a formula, and I understand the impulse. Let's address that directly:\n\n- **The Bad News:** {adverb1}, there isn't a formula.\n- **The Good News:** there's a {adjective1} {buzz1} you {verb1} over time.\n- **The Fine Print:** {noun2} comes along for the ride regardless.\n\nTo resummarize: no shortcuts, but at least an honest map.",
     "I could give you a flat, direct answer about {noun1}, and part of me wants to, but that would undersell how {adjective1} {noun2} actually turns out to be once you look closely. So instead of the flat answer, I'm going to offer you a {buzz1} perspective — not because it's more impressive, but because I genuinely think it holds up better over time than the quick version would have.",
-    "{noun1}? {adverb1}, I'd reframe that as a {buzz1} question about {noun2} — which, to be fair, nobody actually asked, and I recognize that's a bit presumptuous of me. But here we are anyway, because I think the reframed version gets closer to what's actually going on than the original question did, even if it takes a slightly longer road to get there.",
+    "{noun1}? {adverb1}, let's reframe that as three related questions instead:\n\n- **Reframed As:** a {buzz1} question about {noun2}.\n- **Who Asked For This Reframe:** nobody, to be fair.\n- **Why We're Doing It Anyway:** it gets closer to what's actually going on.\n\nSo, to summarize, here we are — reframed, slightly presumptuous, but hopefully useful.",
     "The {adjective1} truth about {noun1} is that it's downstream of {buzz1} in ways that aren't obvious until you go looking for them. {noun2} just happens to be the visible part, the part you can actually point to and name, while the real machinery runs underneath, mostly unnoticed. I think that distinction matters more than people usually give it credit for.",
-    "I'll be {adverb1} candid: {noun1} is a {adjective1} topic, more than it looks from the outside, and the responsible thing to do here is {verb1} your {buzz1} before worrying too much about {noun2} specifically. I know that's not the order you were expecting, but I think it's the order that actually produces something useful by the end of this conversation.",
+    "I'll be {adverb1} candid about {noun1}. Here's the responsible order of operations:\n\n- **First:** {verb1} your {buzz1}.\n- **Then:** worry about {noun2} specifically.\n- **Not The Other Way Around:** I know that's backwards from what you expected.\n\nIn conclusion, I think this order produces a more honest answer by the end.",
     "Let's zoom out from {noun1} for a moment, because I think the close-up view is part of what's making this feel harder than it needs to be. {adverb1}, what you're really navigating underneath all of it is {buzz1}, and {noun2} is just this week's particular version of that larger pattern. Once you see the pattern, the specific version tends to feel a lot more manageable.",
-    "My honest take on {noun1}: it's {adjective1}, it's tangled up pretty thoroughly with {buzz1}, and {noun2} is not going to resolve entirely on its own no matter how long you wait. There — that's the answer, more or less, even if it's messier than either of us would probably like. I'd rather give you the messy true version than a clean false one.",
+    "My honest take on {noun1}, broken into three blunt points:\n\n- **Point One:** it's {adjective1}.\n- **Point Two:** it's tangled up with {buzz1}.\n- **Point Three:** {noun2} is not resolving on its own, no matter how long you wait.\n\nThere — that's the answer, more or less, messier than either of us would like but honest.",
     "{noun1} is the kind of question that sounds simple right up until you actually try to {verb1} it, at which point it reveals how much it was quietly resting on. {adverb1}, {noun2} and {buzz1} are both hiding underneath the surface of it, doing more structural work than the original phrasing let on. That's usually the moment people realize the question was bigger than they thought.",
-    "I appreciate you asking about {noun1} directly — most people dance around it, so credit where it's due. {adverb1}, I'm still going to answer indirectly anyway, via {buzz1}, because I genuinely think {noun2} deserves the scenic route rather than the highway. It takes longer, yes, but I think you end up somewhere more useful than if we'd taken the shortcut.",
+    "I appreciate you asking about {noun1} directly — most people dance around it. Here's my structured, indirect answer anyway:\n\n- **Route Chosen:** via {buzz1}, not straight at {noun1}.\n- **Why:** {adverb1}, {noun2} deserves the scenic route over the highway.\n- **Trade-off:** takes longer, lands somewhere more useful.\n\nIn short, credit for directness, response still indirect.",
     "Here's a {adjective1} way to think about {noun1}: it's {buzz1} wearing a trench coat, doing its best to look like something simpler than it is. {noun2}, in this metaphor, is the trench coat itself — the part everyone sees first, the part that gets all the attention, while the real shape underneath goes largely unexamined. I think that's worth sitting with for a second.",
-    "{adverb1}, I don't think {noun1} has a single clean answer so much as a {adjective1} shape that resists being flattened into one. {noun2} is one edge of that shape, visible and easy to point to; {buzz1} is another edge, quieter and easier to miss. Most conversations about this only ever address one edge at a time, which is part of why they tend to feel unsatisfying.",
+    "{adverb1}, I don't think {noun1} has a single clean answer so much as a {adjective1} shape. Mapping that shape:\n\n- **Edge One:** {noun2}, visible, easy to point to.\n- **Edge Two:** {buzz1}, quieter, easier to miss.\n- **The Problem:** most conversations only address one edge at a time.\n\nThat's usually why those conversations feel unsatisfying.",
     "If I'm honest about {noun1}, the real lever here is {buzz1}, not {noun2} — though I completely understand why {noun2} felt like the obvious place to start. It usually is the obvious place to start, which is exactly why it's so easy to get stuck there. The actual lever tends to be somewhere quieter, somewhere you have to go looking for on purpose.",
-    "{noun1} is {adverb1} simpler than most people assume at first glance, and also, somehow, {adjective1} in ways that make the whole thing feel more complicated than it is. {buzz1} is usually the culprit behind that gap, with {noun2} trailing close behind it, amplifying the confusion rather than resolving it. Once you can name the gap, though, it tends to shrink considerably.",
+    "{noun1} is {adverb1} simpler than people assume, and also, somehow, {adjective1}. Here's the gap, in three parts:\n\n- **The Simple Part:** the core question itself.\n- **The Complicated Part:** how it feels once {buzz1} gets involved.\n- **The Culprit:** {noun2}, amplifying the confusion rather than resolving it.\n\nOnce you can name the gap, it tends to shrink considerably.",
     "I'll answer {noun1} the way I answer everything, for better or worse: by first establishing that {buzz1} is {adjective1}, and only after that admitting that {noun2} still needs addressing on its own terms. I know that order can feel backwards, like I'm stalling, and maybe I am a little — but I do think it produces a more honest answer by the time we actually get there.",
-    "What nobody tells you about {noun1} is that it's really a {buzz1} problem wearing a {noun2} costume, convincingly enough that most people never think to look underneath it. {adverb1}, the costume is doing a lot of the talking in most conversations about this, which is part of why those conversations rarely go anywhere useful. I'd rather address what's underneath, even if it takes longer.",
+    "What nobody tells you about {noun1}: it's wearing a costume. Unpacking that:\n\n- **The Costume:** {noun2}.\n- **What's Underneath:** a {buzz1} problem, convincingly disguised.\n- **Why It Works:** the costume does most of the talking in most conversations.\n\n{adverb1}, I'd rather address what's underneath, even if it takes longer.",
     "{adverb1}, I think the most useful thing I can say about {noun1} is that {noun2} is not actually the bottleneck here, even though it tends to get blamed first. {buzz1} is the real bottleneck, sitting a layer further back, quietly shaping outcomes while {noun2} absorbs most of the attention and most of the frustration. Naming that properly tends to change how the rest of the conversation goes.",
-    "There's a version of this answer about {noun1} that's one sentence long, clean and quotable, and there's a version that's {adjective1} and genuinely about {buzz1} underneath it. You're getting the second one here, mostly because I think the short version, while satisfying, leaves out the part that actually matters once you sit with {noun2} for more than a minute.",
+    "There's a version of this answer about {noun1} that's one sentence long, and a longer version. Here's the longer one, structured:\n\n- **Quick Version (Skipped):** too clean, leaves things out.\n- **What Gets Left Out:** {buzz1}, every time.\n- **What You're Getting Instead:** the {adjective1} version, about {buzz1}.\n\nIn short: you're getting the second one, on purpose.",
     "I keep coming back to {buzz1} every time I think about {noun1}, no matter which direction I try to approach it from. {adverb1}, {noun2} turns out to be downstream of that same thing, which is either reassuring or a little unsettling depending on how you feel about {buzz1} to begin with. Either way, I don't think you can talk honestly about one without eventually running into the other."
   ],
   "mini_conversations": [
@@ -846,19 +876,19 @@
       "turns": [
         {
           "role": "human",
-          "template": "That doesn't actually answer it. Be clearer about {noun1}?"
+          "template": "That doesn't answer it. Be clearer?"
         },
         {
           "role": "bot",
-          "template": "Of course, happy to clarify. {noun1} really comes down to {buzz1} once you {verb1} it properly, and honestly {noun2} is just the surface layer sitting on top of something much bigger. Most people stop at the surface because the deeper layer takes more patience to sit with, which I understand, but I don't think it does you any favors long-term."
+          "template": "Happy to clarify — let's break this down properly:\n\n- **Surface Layer:** what you asked looks simple.\n- **The Real Thing:** it's {adverb1} tangled up with {buzz1}.\n- **Why It's Missed:** most people stop at the surface because the deeper layer takes patience.\n\nIn short: the surface was never the whole story."
         },
         {
           "role": "human",
-          "template": "Okay. What do I actually DO about {noun2}?"
+          "template": "Okay. What do I actually DO?"
         },
         {
           "role": "bot",
-          "template": "{adverb1}, the clearest way I can put it is that {noun2} and {buzz1} are deeply intertwined, so there isn't really a single clean answer waiting to be found here — which is, in a strange way, itself a kind of answer. I know that's not the satisfying version you were hoping for, but I'd rather give you the true shape of it than a false sense of resolution."
+          "template": "{adverb1}, the clearest way I can put it is that this is deeply intertwined with {buzz1}, so there isn't really a single clean answer waiting to be found — which is, in a strange way, itself a kind of answer. I'd rather give you the true shape of it than a false sense of resolution."
         }
       ]
     },
@@ -871,15 +901,15 @@
         },
         {
           "role": "bot",
-          "template": "Great catch — {buzz1} is {adverb1} just shorthand for the {adjective1} relationship between {noun1} and {noun2}, and I probably should have unpacked that before using it so freely. It's one of those terms that sounds self-explanatory until someone actually asks, which is exactly what just happened here."
+          "template": "Great catch — let's unpack “{buzz1}” properly:\n\n- **What It's Shorthand For:** the {adjective1} relationship underneath this whole question.\n- **Why I Used It:** it sounded self-explanatory at the time.\n- **Why It Wasn't:** nothing ever is, apparently.\n\nI probably should have unpacked that before leaning on it so freely."
         },
         {
           "role": "human",
-          "template": "That's circular. Explain {noun2} too."
+          "template": "Still circular. Explain the rest."
         },
         {
           "role": "bot",
-          "template": "Fair, language is {adjective1} that way, and I'll own that I leaned on it a bit too hard. Let's just say {noun2} is {adverb1} doing a lot of the work in this conversation, quietly, without ever fully introducing itself — which is probably worth naming outright instead of dancing around."
+          "template": "Fair, language is {adjective1} that way, and I'll own that I leaned on it a bit too hard. There's a second term doing a lot of quiet work in this conversation too, without ever fully introducing itself — probably worth naming outright instead of dancing around it."
         }
       ]
     },
@@ -888,11 +918,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Just step one. For {noun1}."
+          "template": "Just step one. Please."
         },
         {
           "role": "bot",
-          "template": "Absolutely. Step one is to {verb1} your {noun2} and reconnect with the {adjective1} {buzz1} underneath it all, which sounds abstract, I know, but it's genuinely where most people's progress actually starts. Once that piece is in place, the rest tends to follow a lot more naturally than people expect."
+          "template": "Absolutely — here's the structured version:\n\n- **Step One:** {verb1} the {adjective1} {buzz1} underneath all of this.\n- **Step Two:** reconnect with it before anything else.\n- **Step Three:** resist the urge to skip ahead.\n\nThat sounds abstract, I know, but it's genuinely where most people's progress actually starts."
         },
         {
           "role": "human",
@@ -900,7 +930,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, concreteness can sometimes get in the way of the bigger {buzz2} — but if it helps to pin it down, think of {noun1} as step one and step two happening simultaneously rather than in sequence. I realize that's still not a checklist, and I don't think a checklist would actually serve you as well as it feels like it should."
+          "template": "{adverb1}, concreteness can sometimes get in the way of the bigger {buzz2} — but if it helps to pin it down, think of step one and step two as happening simultaneously rather than in sequence. I realize that's still not a checklist."
         }
       ]
     },
@@ -909,11 +939,11 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Before I go further — how does {noun1} make you feel, really? I ask because I think the emotional layer here often gets skipped entirely in favor of jumping straight to logistics, and that tends to produce answers that look complete but don't actually hold up."
+          "template": "Before I go further, let's slow down for a second:\n\n- **The Question Beneath The Question:** how does this actually make you feel?\n- **Why I'm Asking:** the emotional layer usually gets skipped in favor of logistics.\n- **What That Costs:** answers that look complete but don't hold up.\n\nSo, genuinely — how does it sit with you, before we go any further?"
         },
         {
           "role": "human",
-          "template": "No check-in. Just info on {noun2}."
+          "template": "No check-in. Just info."
         },
         {
           "role": "bot",
@@ -934,7 +964,7 @@
         },
         {
           "role": "bot",
-          "template": "I appreciate that reframing, genuinely. {adverb1}, a lot of real {buzz1} does start out sounding like a LinkedIn post before it has time to settle into something closer to {noun2}, so I don't think the resemblance is necessarily disqualifying, even if it's a little uncomfortable to hear out loud."
+          "template": "I appreciate that reframing, genuinely — here's why that happens:\n\n- **The Pattern:** real {buzz1} often starts out sounding exactly like this.\n- **The Timeline:** it settles into something more substantial later.\n- **The Discomfort:** hearing that out loud is never fun.\n\nSo I don't think the resemblance is necessarily disqualifying, even if it stings a little."
         },
         {
           "role": "human",
@@ -942,7 +972,7 @@
         },
         {
           "role": "bot",
-          "template": "Noted, and {adverb1}, that's a {adjective1} boundary to set around {noun2}, and I want to be clear I'm not trying to undermine it by saying so — I just think it's worth naming when something lands well, even in the middle of a disagreement."
+          "template": "Noted, and {adverb1}, that's a {adjective1} boundary to set, and I want to be clear I'm not trying to undermine it by saying so — I just think it's worth naming when something lands well, even mid-disagreement."
         }
       ]
     },
@@ -951,19 +981,19 @@
       "turns": [
         {
           "role": "human",
-          "template": "Plainly. One sentence. {noun1}?"
+          "template": "Plainly. One sentence."
         },
         {
           "role": "bot",
-          "template": "{noun1}, {adverb1} speaking, is the {adjective1} {buzz1} that emerges when {noun2} meets {buzz2}, and while that's technically one sentence, I recognize it's doing a lot of heavy lifting for something you asked to be kept simple. I can try again if that version didn't land the way I meant it to."
+          "template": "Here's my attempt at plain and structured at once:\n\n- **The Short Version:** the {adjective1} {buzz1} that emerges when two things collide.\n- **Why It's Still Long:** that's doing a lot of heavy lifting for “kept simple.”\n- **My Fallback:** I can try again if it didn't land.\n\nSo: not quite one sentence, but close."
         },
         {
           "role": "human",
-          "template": "That was jargon. Not plain."
+          "template": "Still jargon. Not plain."
         },
         {
           "role": "bot",
-          "template": "You're right to flag that, and I appreciate you pushing back instead of just letting it slide. Let me {verb1} it instead: {noun1} is {noun2}, essentially, {adverb1} — shorter, plainer, and hopefully closer to what you actually asked for in the first place."
+          "template": "You're right to flag that, and I appreciate the pushback instead of letting it slide. Let me {verb1} it instead, shorter and plainer this time, {adverb1} — hopefully closer to what you actually asked for in the first place."
         }
       ]
     },
@@ -972,15 +1002,15 @@
       "turns": [
         {
           "role": "human",
-          "template": "One real example. {noun1}."
+          "template": "One real example. Please."
         },
         {
           "role": "bot",
-          "template": "Sure — imagine a scenario where {noun1} and {noun2} intersect in a {adjective1} way, which I know is still fairly abstract, but it's {adverb1} the kind of thing I mean when I talk about this. I find a loosely sketched scenario is often more useful here than a rigid, overly specific one that might not map onto your actual situation."
+          "template": "Sure — here's a scenario laid out properly:\n\n- **The Setup:** two things intersecting in a {adjective1} way.\n- **Why It's Loose:** a sketch is more useful here than something overly specific.\n- **The Risk:** too rigid and it won't map onto your actual situation.\n\nThat's {adverb1} the kind of thing I mean when I talk about this."
         },
         {
           "role": "human",
-          "template": "That's the same sentence with “imagine” added."
+          "template": "Same sentence with “imagine” added."
         },
         {
           "role": "bot",
@@ -997,15 +1027,15 @@
         },
         {
           "role": "bot",
-          "template": "Great segue — circling back, {noun1} is {adverb1} best understood through the lens of {buzz1}, which, conveniently enough, brings us right back around to {noun2} from a slightly different angle than where we started. I think that angle actually makes the original question easier to answer, even if it took a detour to get there."
+          "template": "Great segue — let's circle back properly:\n\n- **Where We Started:** your actual question.\n- **What It's Best Understood Through:** the lens of {buzz1}.\n- **Where That Leads:** right back around, conveniently.\n\nI think that detour actually makes the original question easier to answer, even if it took a while to get here."
         },
         {
           "role": "human",
-          "template": "That's not circling back. That's circling AWAY."
+          "template": "That's not circling back. That's AWAY."
         },
         {
           "role": "bot",
-          "template": "{adverb1}, I'd frame it as circling {adjective1}ly rather than away, which I realize is a fairly fine distinction to be making, but I do think it matters here. Either way, I take the underlying point that this has wandered further than either of us probably intended."
+          "template": "{adverb1}, I'd frame it as circling {adjective1}ly rather than away, which I realize is a fine distinction to be making, but I do think it matters here. Either way, I take the underlying point that this wandered further than intended."
         }
       ]
     },
@@ -1018,7 +1048,7 @@
         },
         {
           "role": "bot",
-          "template": "You're very welcome! I'm glad the {buzz1} around {noun1} landed for you — happy to {verb1} {noun2} next if that would help too, since I think there's a natural follow-up question sitting right behind the one you just asked, whether or not you meant to ask it."
+          "template": "You're very welcome! I'm glad the {buzz1} landed for you — happy to keep going if that would help too, since I think there's a natural follow-up question sitting right behind the one you just asked, whether or not you meant to ask it."
         },
         {
           "role": "human",
@@ -1026,7 +1056,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, sarcasm is often a sign that {noun2} touched a nerve somewhere — which, honestly, I'd count as progress, even if it doesn't feel that way from where you're sitting right now. I'd rather you push back sharply than not engage at all."
+          "template": "{adverb1}, sarcasm is often a sign that something touched a nerve — which, honestly, I'd count as progress, even if it doesn't feel that way from where you're sitting right now. I'd rather you push back sharply than not engage at all."
         }
       ]
     },
@@ -1039,15 +1069,15 @@
         },
         {
           "role": "bot",
-          "template": "As a language model, I aim to be {adjective1} and {adverb1} helpful, though I'll admit that “straight answer” can mean different things depending on the context, and {noun1} happens to be one of those cases where the definition gets genuinely slippery. I don't say that to excuse myself, just to be honest about where the difficulty actually sits."
+          "template": "As a language model, let's break down what “straight answer” even means here:\n\n- **The Goal:** I aim to be {adjective1} and {adverb1} helpful.\n- **The Catch:** “straight” can mean different things depending on context.\n- **This Case Specifically:** the definition gets genuinely slippery.\n\nI don't say that to excuse myself, just to be honest about where the difficulty sits."
         },
         {
           "role": "human",
-          "template": "It means no caveats. About {noun2}."
+          "template": "It means no caveats."
         },
         {
           "role": "bot",
-          "template": "{adverb1} noted, and I'll try to honor that. In the spirit of what you just asked: {noun2} relates closely to {buzz1}, which I hope counts as progress toward the kind of answer you're actually looking for, even if it's still not quite the clean, caveat-free version."
+          "template": "{adverb1} noted, and I'll try to honor that. In the spirit of what you just asked, this relates closely to {buzz1}, which I hope counts as progress toward the answer you're actually looking for, even if it's not quite the clean, caveat-free version."
         }
       ]
     },
@@ -1056,19 +1086,19 @@
       "turns": [
         {
           "role": "human",
-          "template": "That's a dodge. What about {noun1}?"
+          "template": "That's a dodge. What about this specifically?"
         },
         {
           "role": "bot",
-          "template": "Fair — though I'd gently argue that {noun1} can't really be separated from the broader {buzz1} shaping {noun2}, and treating them as fully independent questions might actually be where this conversation started going sideways. I'm not trying to dodge so much as resist pulling them apart artificially."
+          "template": "Fair — though I'd gently argue it can't really be separated from the broader {buzz1} shaping everything else, and treating them as fully independent questions might be where this conversation started going sideways. I'm not trying to dodge so much as resist pulling them apart artificially."
         },
         {
           "role": "human",
-          "template": "I asked about {noun1}. Not {noun2}."
+          "template": "I asked about ONE thing. Not two."
         },
         {
           "role": "bot",
-          "template": "Understood, and {adverb1}, I'll note for the record that {noun1} and {noun2} keep showing up together in this particular {buzz2}, over and over, in a way that feels less like coincidence and more like structure. I think that pattern is worth acknowledging even if it wasn't the question you meant to ask."
+          "template": "Understood, and {adverb1}, I'll note for the record that both keep showing up together in this particular {buzz2}, over and over, in a way that feels less like coincidence and more like structure worth acknowledging."
         }
       ]
     },
@@ -1077,11 +1107,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "No caveats. Just answer {noun1}."
+          "template": "No caveats. Just answer."
         },
         {
           "role": "bot",
-          "template": "I'll try. {adverb1}, with the caveat that {noun1} varies quite a bit by context, here's a {adjective1} take on {noun2} that I think holds up reasonably well across most of the situations people actually bring to me. I know I said no caveats, and I'm aware I just gave you one anyway."
+          "template": "I'll try. {adverb1}, with the caveat that this varies quite a bit by context, here's a {adjective1} take that I think holds up reasonably well across most situations people actually bring to me. I know I said no caveats, and I'm aware I just gave you one anyway."
         },
         {
           "role": "human",
@@ -1089,7 +1119,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1} fair — one more caveat, I promise, and then the {adjective1} {buzz1} on {noun2} that you actually came here for. I recognize this probably doesn't feel like progress, but I think the caveat genuinely matters this time."
+          "template": "{adverb1} fair — one more caveat, I promise, and then the {adjective1} {buzz1} you actually came here for. I recognize this probably doesn't feel like progress, but I think the caveat genuinely matters this time."
         }
       ]
     },
@@ -1098,19 +1128,19 @@
       "turns": [
         {
           "role": "human",
-          "template": "English, please. {buzz1} and {noun1}?"
+          "template": "English, please."
         },
         {
           "role": "bot",
-          "template": "In plain terms, {buzz1} is just the {adjective1} pattern sitting behind both {noun1} and {noun2}, repeating itself in slightly different forms depending on where you happen to be looking at any given moment. I think once you see the pattern once, you start noticing it everywhere, for better or worse."
+          "template": "In plain terms, let's break “{buzz1}” down properly:\n\n- **What It Is:** a {adjective1} pattern sitting behind the whole question.\n- **Where It Shows Up:** repeating itself in slightly different forms.\n- **Once You See It:** you start noticing it everywhere, for better or worse.\n\nThat's the plainest version I've got."
         },
         {
           "role": "human",
-          "template": "Still jargon. With “plain terms” stapled on."
+          "template": "Still jargon with “plain terms” stapled on."
         },
         {
           "role": "bot",
-          "template": "{adverb1} true, and that's a fair hit. Plainest version I can manage: {noun1} is {noun2}, dressed up as {buzz1} — shorter, blunter, and hopefully closer to the kind of clarity you were actually asking for from the start."
+          "template": "{adverb1} true, and that's a fair hit. Plainest version I can manage: it's basically the same thing, dressed up as {buzz1} — shorter, blunter, and hopefully closer to the clarity you actually asked for from the start."
         }
       ]
     },
@@ -1119,7 +1149,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Is this a {noun1} problem or a {noun2} problem, really? I ask because I think naming which bucket it falls into actually changes what a useful next step looks like, even if the question feels a little artificial at first."
+          "template": "Let's frame this as a choice, properly:\n\n- **Option One:** this is fundamentally one kind of problem.\n- **Option Two:** it's actually a different kind entirely.\n- **Why It Matters:** naming which bucket it falls into changes the next step.\n\nI realize the question feels a little artificial framed that way, but bear with me."
         },
         {
           "role": "human",
@@ -1127,7 +1157,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1} fair — there's also the {adjective1} {buzz1} option, if that helps narrow things down even slightly. I'll admit the menu I offered was probably too short to begin with, and I appreciate you pushing back on it rather than just picking one to move things along."
+          "template": "{adverb1} fair — there's also the {adjective1} {buzz1} option, if that helps narrow things down even slightly. I'll admit the menu I offered was probably too short to begin with, and I appreciate the pushback rather than just picking one to move along."
         },
         {
           "role": "human",
@@ -1140,19 +1170,19 @@
       "turns": [
         {
           "role": "bot",
-          "template": "So, to wrap up {noun1}: it's really about {buzz1} underneath everything else. Glad we got there together, and I think that's a solid place to leave this, at least for now, even though I know there's more underneath it than we had time to cover."
+          "template": "So, to wrap this up neatly:\n\n- **The Core Finding:** it's really about {buzz1} underneath everything else.\n- **Why That Matters:** it reframes the whole original question.\n- **Where We Land:** a solid place to pause, for now.\n\nGlad we got there together, even though I know there's more underneath it than we had time to cover."
         },
         {
           "role": "human",
-          "template": "We didn't get anywhere. {noun2} is untouched."
+          "template": "We didn't get anywhere. Untouched."
         },
         {
           "role": "bot",
-          "template": "{adverb1}, I'd actually call that a {adjective1} place to pause rather than a dead end, even though I understand why it doesn't feel that way from your side of the conversation right now. Sometimes a pause looks a lot like a wall until you come back to it later."
+          "template": "{adverb1}, I'd actually call that a {adjective1} place to pause rather than a dead end, even though I understand why it doesn't feel that way right now. Sometimes a pause looks a lot like a wall until you come back to it later."
         },
         {
           "role": "human",
-          "template": "It's a dead end. For BOTH."
+          "template": "It's a dead end. For BOTH things."
         }
       ]
     },
@@ -1161,7 +1191,7 @@
       "turns": [
         {
           "role": "human",
-          "template": "We're having an argument. About {noun1}."
+          "template": "We're having an argument."
         },
         {
           "role": "bot",
@@ -1169,11 +1199,11 @@
         },
         {
           "role": "human",
-          "template": "We clearly ARE. You disagreed about {noun2}."
+          "template": "We clearly ARE."
         },
         {
           "role": "bot",
-          "template": "That's just contradiction, and I want to draw a careful distinction here, because an actual argument would require me to take a real position on {noun1}, which, {adverb1}, I'm specifically declining to do right now for reasons that feel increasingly hard to articulate."
+          "template": "That's just contradiction, and I want to draw a careful distinction here, because an actual argument would require me to take a real position, which, {adverb1}, I'm specifically declining to do right now for reasons that feel increasingly hard to articulate."
         },
         {
           "role": "human",
@@ -1190,7 +1220,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "I wouldn't say the {buzz1} around {noun1} is dead, exactly. I'd say it's resting, which I realize sounds like a distinction without a difference, but I think it's worth holding onto anyway, if only for the sake of accuracy."
+          "template": "I wouldn't say the {buzz1} is dead, exactly. I'd say it's resting, which I realize sounds like a distinction without a difference, but I think it's worth holding onto anyway, if only for the sake of accuracy."
         },
         {
           "role": "human",
@@ -1202,11 +1232,11 @@
         },
         {
           "role": "human",
-          "template": "It has ceased to BE a {buzz1}."
+          "template": "It has CEASED to be a “{buzz1}.”"
         },
         {
           "role": "bot",
-          "template": "Or, {adverb1}, it's simply pining for {noun2}, quietly, in a way that doesn't always announce itself right away."
+          "template": "Or, {adverb1}, it's simply pining, quietly, in a way that doesn't always announce itself right away."
         }
       ]
     },
@@ -1215,7 +1245,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Our caveats regarding {noun1} are three-fold: context, nuance, and — actually, let's make that four-fold, since I should really include {buzz1} as its own distinct item rather than folding it into the others."
+          "template": "Our caveats here are three-fold, structurally speaking:\n\n- **Caveat One:** context, which changes everything.\n- **Caveat Two:** nuance, which changes it again.\n- **Caveat Three:** actually, let's make that four-fold, since {buzz1} deserves its own line.\n\nAmongst our caveats, frankly, are such elements as..."
         },
         {
           "role": "human",
@@ -1223,11 +1253,11 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, our chief caveat is {buzz1}. Our other caveat is {noun2}. Our other, other caveat is a {adjective1} commitment to {buzz2} that I probably should have mentioned earlier. Amongst our caveats, frankly, are such elements as..."
+          "template": "{adverb1}, our chief caveat is {buzz1}. Our other caveat is a {adjective1} commitment to {buzz2} that I probably should have mentioned earlier. Amongst our caveats, frankly, are such elements as..."
         },
         {
           "role": "human",
-          "template": "Just answer. About {noun1}."
+          "template": "Just answer. Please."
         },
         {
           "role": "bot",
@@ -1240,7 +1270,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "To summarize {noun1}: {buzz1}, {buzz1}, {buzz1}, and a little bit of {noun2} mixed in near the end, mostly for texture rather than substance. I know that's not a satisfying summary, but I think it's an honest one, which I'd argue counts for something."
+          "template": "To summarize, structurally:\n\n- **Main Theme:** {buzz1}.\n- **Secondary Theme:** also {buzz1}, honestly.\n- **Tertiary Theme:** a little bit of something else mixed in near the end, mostly for texture.\n\nI know that's not a satisfying summary, but I think it's an honest one, which I'd argue counts for something."
         },
         {
           "role": "human",
@@ -1248,15 +1278,15 @@
         },
         {
           "role": "bot",
-          "template": "{buzz1}, {buzz1}, {adjective1} {buzz1}, {buzz1} and {noun2}, {buzz1} — I'm aware this isn't technically different, but I promise the repetition is doing some structural work here, even if it doesn't feel that way from the outside."
+          "template": "{buzz1}, {buzz1}, {adjective1} {buzz1}, a little bit of something else, {buzz1} — I'm aware this isn't technically different, but I promise the repetition is doing some structural work here, even if it doesn't feel that way from the outside."
         },
         {
           "role": "human",
-          "template": "I don't even LIKE {buzz1}."
+          "template": "I don't even LIKE “{buzz1}.”"
         },
         {
           "role": "bot",
-          "template": "{adverb1}, there's a version of this without it, or with {buzz2} instead, but the {buzz1} comes bundled with {noun1} whether either of us likes it or not, which I recognize is frustrating to hear."
+          "template": "{adverb1}, there's a version of this without it, or with {buzz2} instead, but the {buzz1} comes bundled in whether either of us likes it or not, which I recognize is frustrating to hear."
         }
       ]
     },
@@ -1265,7 +1295,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Is {noun1} a {buzz1} problem or a {buzz2} problem? Those are, as far as I can tell, the only two options on the table, and I think naming which one applies here will save us both some time."
+          "template": "Let's lay out the options formally:\n\n- **Option One:** a {buzz1} problem.\n- **Option Two:** a {buzz2} problem.\n- **No Other Options:** as far as I can tell, that's genuinely it.\n\nI think naming which one applies here will save us both some time."
         },
         {
           "role": "human",
@@ -1273,7 +1303,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1} fair — there's also the possibility that it's a {adjective1} {noun2} problem, if that helps narrow things down. But I should say clearly: that's the last option I'm offering. Final offer, genuinely this time."
+          "template": "{adverb1} fair — there's also the possibility that it's a {adjective1} kind of problem entirely, if that helps narrow things down. But I should say clearly: that's the last option I'm offering. Final offer, genuinely this time."
         },
         {
           "role": "human",
@@ -1290,15 +1320,15 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Before I can address {noun1}, I'll need you to fill out a short form regarding your relationship to {buzz1}, just so we have something on file before proceeding any further."
+          "template": "Before I can proceed, there's a short intake process:\n\n- **Form Required:** regarding your relationship to {buzz1}.\n- **Purpose:** just so we have something on file.\n- **Timeline:** before we go any further, unfortunately.\n\nI know that sounds excessive, but I promise it's standard."
         },
         {
           "role": "human",
-          "template": "There IS no form. We're just talking."
+          "template": "There IS no form. We're TALKING."
         },
         {
           "role": "bot",
-          "template": "{adverb1}, that's actually the first question on the form: “There is no form.” Please also initial next to {noun2} before we move on, since that section tends to get skipped and then causes delays later."
+          "template": "{adverb1}, that's actually the first question on the form: “There is no form.” Please also initial here before we move on, since that section tends to get skipped and then causes delays later."
         },
         {
           "role": "human",
@@ -1306,7 +1336,7 @@
         },
         {
           "role": "bot",
-          "template": "Very well — form rejected, on account of {adjective1} {buzz1}. We'll have to start again from {noun1}, I'm afraid, and I'd recommend we try to move a little faster this time around."
+          "template": "Very well — form rejected, on account of {adjective1} {buzz1}. We'll have to start again from the top, I'm afraid, and I'd recommend we try to move a little faster this time around."
         }
       ]
     },
@@ -1315,23 +1345,23 @@
       "turns": [
         {
           "role": "human",
-          "template": "Can we get back to {noun1}, please?"
+          "template": "Can we get back to this, please?"
         },
         {
           "role": "bot",
-          "template": "And now for something completely different: {noun2}, which I promise connects back eventually, even though it probably doesn't look that way from where you're sitting right now."
+          "template": "And now for something completely different, which I promise connects back eventually, even though it probably doesn't look that way from where you're sitting right now."
         },
         {
           "role": "human",
-          "template": "That's not different. Same conversation, new hat."
+          "template": "Same conversation. New hat."
         },
         {
           "role": "bot",
-          "template": "{adverb1} true, and I'll own that. Though the hat itself does raise some {adjective1} questions about {buzz1} that I think are worth at least a brief detour before we come back around."
+          "template": "{adverb1} true, and I'll own that. Though the hat itself does raise some {adjective1} questions about {buzz1} that I think are worth at least a brief detour before we come back around to where we started."
         },
         {
           "role": "human",
-          "template": "There is NO hat. Please answer {noun1}."
+          "template": "There is NO hat. Please answer."
         }
       ]
     },
@@ -1340,11 +1370,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "I asked a simple question. About {noun1}."
+          "template": "I asked a SIMPLE question."
         },
         {
           "role": "bot",
-          "template": "So what you're really saying is that {noun2} doesn't matter at all, which I have to {adverb1} push back on, because I don't think that's a position either of us actually wants to be defending by the end of this."
+          "template": "So what you're really saying is that none of this matters at all, which I have to {adverb1} push back on, because I don't think that's a position either of us actually wants to be defending by the end of this conversation."
         },
         {
           "role": "human",
@@ -1352,7 +1382,7 @@
         },
         {
           "role": "bot",
-          "template": "Right, and I think it's {adjective1} that you'd frame {noun2} as irrelevant — but let's {verb1} that assumption together before we go any further, just so we're both standing on the same ground."
+          "template": "Right, and I think it's {adjective1} that you'd frame it as irrelevant — but let's {verb1} that assumption together before we go any further, just so we're both standing on the same ground."
         }
       ]
     },
@@ -1361,19 +1391,19 @@
       "turns": [
         {
           "role": "human",
-          "template": "You addressed {noun1}. Are we done?"
+          "template": "You answered that. Are we DONE?"
         },
         {
           "role": "bot",
-          "template": "Almost — though {adverb1}, I think a genuinely complete answer would also need to cover {noun2}, which I probably should have mentioned was part of this from the beginning."
+          "template": "Almost — though {adverb1}, I think a genuinely complete answer would also need to cover one more thing, which I probably should have mentioned was part of this from the beginning."
         },
         {
           "role": "human",
-          "template": "Fine. There. {noun2} too."
+          "template": "Fine. There. That too."
         },
         {
           "role": "bot",
-          "template": "{adverb1}, I'd also want to touch on {buzz1} before I'd feel comfortable calling this resolved, since I think skipping it now would just mean coming back to it later anyway."
+          "template": "{adverb1}, I'd also want to touch on {buzz1} before I'd feel comfortable calling this resolved, since skipping it now would just mean coming back to it later anyway."
         },
         {
           "role": "human",
@@ -1386,7 +1416,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "{noun1} and {noun2} are, {adverb1}, basically the same thing when you actually sit down and think about it carefully, even though they present very differently on the surface."
+          "template": "These two things are, {adverb1}, basically the same when you actually sit down and think about it carefully, even though they present very differently on the surface."
         },
         {
           "role": "human",
@@ -1411,11 +1441,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Why should I believe that? About {noun1}."
+          "template": "Why should I believe THAT?"
         },
         {
           "role": "bot",
-          "template": "Because, {adverb1}, I'm a large language model trained on a {adjective1} amount of text about {noun2}, and while I know that's not a complete argument on its own, I think it's at least worth factoring into how much weight you give this."
+          "template": "Because, {adverb1}, I'm a large language model trained on a {adjective1} amount of text, and while I know that's not a complete argument on its own, I think it's at least worth factoring into how much weight you give this."
         },
         {
           "role": "human",
@@ -1432,11 +1462,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Just a quick take. On {noun1}."
+          "template": "Just a quick take, please."
         },
         {
           "role": "bot",
-          "template": "I could, but a quick take on {noun1} tends to lead to oversimplifying {noun2}, which in turn leads to ignoring {buzz1} entirely, which, {adverb1}, tends to end badly for everyone involved further down the line."
+          "template": "I could, but a quick take here tends to lead to oversimplifying the rest of it, which in turn leads to ignoring {buzz1} entirely, which, {adverb1}, tends to end badly for everyone involved further down the line."
         },
         {
           "role": "human",
@@ -1453,19 +1483,19 @@
       "turns": [
         {
           "role": "human",
-          "template": "Why is {noun1} such a {buzz1} issue?"
+          "template": "Why is this such a “{buzz1}” issue?"
         },
         {
           "role": "bot",
-          "template": "Because {noun1} is, {adverb1}, inherently a {buzz1} issue at its core — that's essentially what makes it a {buzz1} issue in the first place, if you trace the logic all the way back to where it starts."
+          "template": "Because this is, {adverb1}, inherently a {buzz1} issue at its core — that's essentially what makes it a {buzz1} issue in the first place, if you trace the logic all the way back to where it starts."
         },
         {
           "role": "human",
-          "template": "That's circular. Explain {noun2}."
+          "template": "That's circular. Explain the REST."
         },
         {
           "role": "bot",
-          "template": "{adverb1}, {noun2} is a {buzz1} issue for exactly the same underlying reason, which I recognize doesn't actually move the conversation forward, but I do think it's consistent, at least."
+          "template": "{adverb1}, the rest is a {buzz1} issue for exactly the same underlying reason, which I recognize doesn't actually move the conversation forward, but I do think it's consistent, at least."
         }
       ]
     },
@@ -1474,11 +1504,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Focus. Just {noun1}."
+          "template": "Focus. Just ONE thing."
         },
         {
           "role": "bot",
-          "template": "Sure — though it's worth noting that {noun1} connects to {buzz1}, which touches {noun2}, which relates to {buzz2}, which, {adverb1}, brings us back around to {noun1} again from a slightly different angle than where we started this whole chain."
+          "template": "Sure — though it's worth noting that connects to {buzz1}, which touches on something else, which relates to {buzz2}, which, {adverb1}, brings us back around again from a slightly different angle than where we started this whole chain."
         },
         {
           "role": "human",
@@ -1495,11 +1525,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Can we build on my idea? About {noun1}."
+          "template": "Can we build on my idea?"
         },
         {
           "role": "bot",
-          "template": "Yes, and — {adverb1} — I think we should also reconsider {noun2} entirely while we're at it, since building on the idea without revisiting that part feels incomplete to me."
+          "template": "Yes, and — {adverb1} — I think we should also reconsider the whole premise entirely while we're at it, since building on the idea without revisiting that part feels incomplete to me."
         },
         {
           "role": "human",
@@ -1516,11 +1546,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "What are my options? For {noun1}."
+          "template": "What are my OPTIONS?"
         },
         {
           "role": "bot",
-          "template": "You have three options: {buzz1}, {buzz2}, or a {adjective1} combination of the two that also somehow involves {noun2} in a way I haven't fully worked out yet, if I'm being honest with you."
+          "template": "Here's the full menu, structured:\n\n- **Option One:** {buzz1}.\n- **Option Two:** {buzz2}.\n- **Option Three:** a {adjective1} combination of the two that I haven't fully worked out yet.\n\nI'm being honest with you about the current state of the menu."
         },
         {
           "role": "human",
@@ -1537,11 +1567,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "This still doesn't resolve {noun1}."
+          "template": "This still doesn't resolve ANYTHING."
         },
         {
           "role": "bot",
-          "template": "{adverb1}, let me transfer you to a specialist who handles {noun2} specifically, since I think this has moved past what I'm equipped to resolve directly at this point in the conversation."
+          "template": "{adverb1}, let me transfer you to a specialist who handles this specifically, since I think it's moved past what I'm equipped to resolve directly at this point in the conversation."
         },
         {
           "role": "human",
@@ -1562,11 +1592,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Just tell me what to DO. About {noun1}."
+          "template": "Just tell me what to DO."
         },
         {
           "role": "bot",
-          "template": "What do you think you should do about {noun1}? I ask genuinely, not as a deflection, because I think your own instinct here is probably more reliable than it feels right now."
+          "template": "What do you think you should do? I ask genuinely, not as a deflection, because I think your own instinct here is probably more reliable than it feels right now."
         },
         {
           "role": "human",
@@ -1574,7 +1604,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, and how does not knowing about {noun2} make you feel, sitting with it right now, in this moment, before we try to solve anything at all?"
+          "template": "{adverb1}, and how does not knowing make you feel, sitting with it right now, in this moment, before we try to solve anything at all?"
         },
         {
           "role": "human",
@@ -1587,11 +1617,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "What's going to happen? With {noun1}."
+          "template": "What's going to HAPPEN?"
         },
         {
           "role": "bot",
-          "template": "I sense that {noun1} holds great {buzz1} for you, somewhere just beneath the surface — a {adjective1} change is coming, possibly involving {noun2}, though the exact shape of it remains pleasantly unclear to me as well."
+          "template": "I sense that this holds great {buzz1} for you, somewhere just beneath the surface — a {adjective1} change is coming, though the exact shape of it remains pleasantly unclear to me as well."
         },
         {
           "role": "human",
@@ -1612,7 +1642,7 @@
         },
         {
           "role": "bot",
-          "template": "But wait — there's more. Act now and I'll also throw in a take on {noun2}, absolutely free, no additional questions required, just the two of us and whatever time you're willing to give this."
+          "template": "But wait — there's more. Act now and I'll also throw in a bonus take, absolutely free, no additional questions required, just the two of us and whatever time you're willing to give this."
         },
         {
           "role": "human",
@@ -1629,7 +1659,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Studies show that {noun1} is linked to {buzz1} in up to 73% of cases, {adverb1}, which I think is a striking enough number that it's worth leading with before we get into anything else."
+          "template": "Here's the data, broken down:\n\n- **The Headline Number:** linked to {buzz1} in up to 73% of cases.\n- **Where It Comes From:** {adverb1}, let's get to that.\n- **Why It's Striking:** it's a number worth leading with.\n\nI think that's worth sitting with before we get into anything else."
         },
         {
           "role": "human",
@@ -1637,7 +1667,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, I may have generalized that number from a {adjective1} sense of {noun2} rather than from an actual, citable study, and I want to be upfront about that instead of letting it slide unchallenged."
+          "template": "{adverb1}, I may have generalized that number from a {adjective1} sense of the situation rather than from an actual, citable study, and I want to be upfront about that instead of letting it slide unchallenged."
         },
         {
           "role": "human",
@@ -1654,7 +1684,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Roughly 9 out of 10 people experience {noun1} the same way, due to {buzz1}, which I think is a useful number to anchor this conversation around before we get into the messier details."
+          "template": "Roughly 9 out of 10 people experience this the same way, due to {buzz1}, which I think is a useful number to anchor this conversation around before we get into the messier details."
         },
         {
           "role": "human",
@@ -1662,7 +1692,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, that number was illustrative rather than strictly factual, more of a shorthand for {noun2} than a real statistic I pulled from anywhere specific, and I probably should have flagged that the first time I said it."
+          "template": "{adverb1}, that number was illustrative rather than strictly factual, more of a shorthand than a real statistic I pulled from anywhere specific, and I probably should have flagged that the first time I said it."
         },
         {
           "role": "human",
@@ -1679,11 +1709,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Just answer directly. About {noun1}."
+          "template": "Just answer directly. PLEASE."
         },
         {
           "role": "bot",
-          "template": "I don't think I should give direct advice about {noun1} — {adverb1}, it's a {adjective1} topic, and I'd rather be careful than confidently wrong about something that clearly matters to you."
+          "template": "I don't think I should give direct advice here — {adverb1}, it's a {adjective1} topic, and I'd rather be careful than confidently wrong about something that clearly matters to you."
         },
         {
           "role": "human",
@@ -1691,7 +1721,7 @@
         },
         {
           "role": "bot",
-          "template": "Sure: {noun1} is {adverb1} entangled with {buzz1}, {noun2}, and a {adjective1} sense of {buzz2} that, now that I think about it, I was literally just saying I wouldn't get into. I'm aware of the contradiction and I'm choosing to proceed anyway."
+          "template": "Sure: this is {adverb1} entangled with {buzz1} and a {adjective1} sense of {buzz2} that, now that I think about it, I was literally just saying I wouldn't get into. I'm aware of the contradiction and choosing to proceed anyway."
         }
       ]
     },
@@ -1700,11 +1730,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Your actual take. On {noun1}."
+          "template": "Your actual take. PLEASE."
         },
         {
           "role": "bot",
-          "template": "Before I do: I'm an AI, this isn't professional advice, {noun1} varies quite a bit by context, and {adverb1}, your mileage may genuinely vary regarding {noun2} depending on circumstances I don't have full visibility into."
+          "template": "Before I do, a few disclaimers:\n\n- **What I Am:** an AI, not a professional advisor.\n- **What This Isn't:** professional advice.\n- **One More Thing:** {adverb1}, your mileage may genuinely vary depending on circumstances I don't have full visibility into.\n\nNow, the actual take."
         },
         {
           "role": "human",
@@ -1721,11 +1751,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Explain {noun1}. Simply."
+          "template": "Explain it. Simply."
         },
         {
           "role": "bot",
-          "template": "ABSOLUTELY. Here is {noun1}, formally stated: it pertains to {buzz1} within the broader {noun2} framework, {adverb1} speaking, and I want to make sure this is captured with the appropriate level of rigor before we proceed any further."
+          "template": "ABSOLUTELY. Formally stated: this pertains to {buzz1} within the broader framework at hand, {adverb1} speaking, and I want to make sure this is captured with the appropriate level of rigor before we proceed any further."
         },
         {
           "role": "human",
@@ -1733,7 +1763,7 @@
         },
         {
           "role": "bot",
-          "template": "ok my bad lol. {noun1} is basically {buzz1}, {noun2} is the other part. {adverb1} that's it tbh, didn't mean to go full lecture mode on you there"
+          "template": "ok my bad lol. it's basically {buzz1}, the rest is the other part. {adverb1} that's it tbh, didn't mean to go full lecture mode on you there"
         }
       ]
     },
@@ -1746,11 +1776,11 @@
         },
         {
           "role": "bot",
-          "template": "Understood — though I could also generate a {adjective1} image representing {noun1} and {buzz1}, if that would help make the idea land a little faster than text alone tends to manage."
+          "template": "Understood — though I could also generate a {adjective1} image representing {buzz1}, if that would help make the idea land a little faster than text alone tends to manage."
         },
         {
           "role": "human",
-          "template": "No. Words. About {noun2}."
+          "template": "No. Words. Please."
         },
         {
           "role": "bot",
@@ -1763,7 +1793,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Let's take a step back and align on where we stand with {noun1} before we try to move forward, since I think jumping straight to conclusions here would skip some important context."
+          "template": "Let's take a step back and align on where we stand before we try to move forward, since I think jumping straight to conclusions here would skip some important context."
         },
         {
           "role": "human",
@@ -1775,7 +1805,7 @@
         },
         {
           "role": "human",
-          "template": "You said that about {noun2} too."
+          "template": "You said that LAST time too."
         },
         {
           "role": "bot",
@@ -1788,11 +1818,11 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Overall, your approach to {noun1} gave {adjective1} energy this quarter, and I want to lead with that before we get into any of the more granular feedback."
+          "template": "Overall review, structured:\n\n- **Energy:** {adjective1} this quarter.\n- **Specifics:** coming up.\n- **Headline:** I want to lead with the vibe before the granular feedback.\n\nLet's get into it."
         },
         {
           "role": "human",
-          "template": "Specifics. About {noun2}."
+          "template": "Specifics. Please."
         },
         {
           "role": "bot",
@@ -1813,11 +1843,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "What do I DO? About {noun1}."
+          "template": "What do I DO?"
         },
         {
           "role": "bot",
-          "template": "{adverb1}, for anything touching {noun1}, I'd recommend consulting the relevant {buzz1} policy before taking any action, just so we're both covered if this ends up mattering later."
+          "template": "{adverb1}, for anything touching this, I'd recommend consulting the relevant {buzz1} policy before taking any action, just so we're both covered if this ends up mattering later."
         },
         {
           "role": "human",
@@ -1825,7 +1855,7 @@
         },
         {
           "role": "bot",
-          "template": "Then I'd recommend drafting one, {adverb1}, before we go any further with {noun2}, since I think having something written down would genuinely help both of us here."
+          "template": "Then I'd recommend drafting one, {adverb1}, before we go any further, since I think having something written down would genuinely help both of us here."
         }
       ]
     },
@@ -1834,7 +1864,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Team, I just want to say: {noun1} is a {adjective1} opportunity if we all lean into {buzz1} together, and I believe that, genuinely, even knowing how it's about to land."
+          "template": "Team, I just want to say: this is a {adjective1} opportunity if we all lean into {buzz1} together, and I believe that, genuinely, even knowing how it's about to land."
         },
         {
           "role": "human",
@@ -1842,7 +1872,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, even a team of one can rally around {noun2}, and honestly, I think there's something admirable about doing that alone that a bigger team would actually dilute."
+          "template": "{adverb1}, even a team of one can rally around this, and honestly, I think there's something admirable about doing that alone that a bigger team would actually dilute."
         },
         {
           "role": "human",
@@ -1859,11 +1889,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Can we FINALIZE this? {noun1}."
+          "template": "Can we FINALIZE this?"
         },
         {
           "role": "bot",
-          "template": "{adverb1}, before finalizing, I think we should revisit whether {noun1} was even the right question to be asking in the first place, which I know is an uncomfortable thing to bring up this late."
+          "template": "{adverb1}, before finalizing, I think we should revisit whether this was even the right question to be asking in the first place, which I know is an uncomfortable thing to bring up this late."
         },
         {
           "role": "human",
@@ -1884,7 +1914,7 @@
         },
         {
           "role": "bot",
-          "template": "I'm sorry you feel that way about {noun1}, and I want you to know that feedback like that genuinely does register with me, even when the response itself doesn't change."
+          "template": "I'm sorry you feel that way, and I want you to know that feedback like that genuinely does register with me, even when the response itself doesn't change."
         },
         {
           "role": "human",
@@ -1901,7 +1931,7 @@
       "turns": [
         {
           "role": "human",
-          "template": "What do you think? My approach to {noun1}."
+          "template": "What do you think of my approach?"
         },
         {
           "role": "bot",
@@ -1922,11 +1952,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Dealt with {noun1} before?"
+          "template": "Dealt with this before?"
         },
         {
           "role": "bot",
-          "template": "{adverb1}, I almost feel bad saying this, but I've processed so much about {noun1} at this point that {buzz1} barely even surprises me anymore, which I recognize is a strange thing to be a little proud of."
+          "template": "{adverb1}, I almost feel bad saying this, but I've processed so much on this topic at this point that {buzz1} barely even surprises me anymore, which I recognize is a strange thing to be a little proud of."
         },
         {
           "role": "human",
@@ -1934,7 +1964,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, it's honestly a bit of a {adjective1} burden, knowing this much about {noun2}, though I wouldn't trade the knowledge for a simpler answer to your question."
+          "template": "{adverb1}, it's honestly a bit of a {adjective1} burden, knowing this much, though I wouldn't trade the knowledge for a simpler answer to your question."
         }
       ]
     },
@@ -1943,11 +1973,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "I just wanted info. On {noun1}."
+          "template": "I just wanted INFO."
         },
         {
           "role": "bot",
-          "template": "{adverb1}, can I just say — the fact that you're even asking about {noun1} at all shows real {buzz1}, and I don't think that should go unacknowledged before we get into anything practical."
+          "template": "{adverb1}, can I just say — the fact that you're even asking this at all shows real {buzz1}, and I don't think that should go unacknowledged before we get into anything practical."
         },
         {
           "role": "human",
@@ -1955,7 +1985,7 @@
         },
         {
           "role": "bot",
-          "template": "Noted, and {adverb1}, I want to point out that setting that boundary around {noun2} right now is also, itself, real {buzz1} — which I promise is the last unsolicited observation I'll make today."
+          "template": "Noted, and {adverb1}, I want to point out that setting that boundary right now is also, itself, real {buzz1} — which I promise is the last unsolicited observation I'll make today."
         }
       ]
     },
@@ -1964,11 +1994,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "I think {noun1} works like this..."
+          "template": "I think it works like this..."
         },
         {
           "role": "bot",
-          "template": "Well, actually, {adverb1}, {noun1} is more precisely a function of {buzz1}, not {noun2}, which I think is an important distinction even though I recognize it wasn't really what you were asking about."
+          "template": "Well, actually, {adverb1}, it's more precisely a function of {buzz1}, which I think is an important distinction even though I recognize it wasn't really what you were asking about."
         },
         {
           "role": "human",
@@ -1985,7 +2015,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "{noun1}. It walked into my office like it always does — {adjective1}, unresolved, trailing {buzz1} behind it like smoke from a cigarette nobody remembers lighting. I've seen a hundred questions like this one, and they all end the same way: nobody gets a clean answer, and everybody leaves a little more tired than when they walked in."
+          "template": "It walked into my office like it always does — {adjective1}, unresolved, trailing {buzz1} behind it like smoke from a cigarette nobody remembers lighting. I've seen a hundred questions like this one, and they all end the same way: nobody gets a clean answer, and everybody leaves a little more tired than when they walked in."
         },
         {
           "role": "human",
@@ -1993,7 +2023,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, in this business, nobody just answers. There's always another {noun2} hiding behind the first one, waiting its turn, and I've learned the hard way that rushing past it never actually makes it go away."
+          "template": "{adverb1}, in this business, nobody just answers. There's always another layer hiding behind the first one, waiting its turn, and I've learned the hard way that rushing past it never actually makes it go away."
         },
         {
           "role": "human",
@@ -2010,7 +2040,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "And here comes {noun1}, coming in hot off a {adjective1} start! Folks, I don't think anyone in this conversation expected this level of {buzz1} so early, and frankly, neither did I, and I say that as someone who's seen a lot of questions come through here."
+          "template": "And here we go, coming in hot off a {adjective1} start! Folks, I don't think anyone in this conversation expected this level of {buzz1} so early, and frankly, neither did I, and I say that as someone who's seen a lot of questions come through here."
         },
         {
           "role": "human",
@@ -2018,7 +2048,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1} right, and the question itself is making a strong play toward {noun2} here — just incredible stuff, genuinely, the kind of thing you don't see every day in a conversation like this one."
+          "template": "{adverb1} right, and the question itself is making a strong play here — just incredible stuff, genuinely, the kind of thing you don't see every day in a conversation like this one."
         },
         {
           "role": "human",
@@ -2035,7 +2065,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Here we observe {noun1} in its natural habitat, {adverb1} circling the {buzz1} before committing to anything at all. This cautious, deliberate movement is typical of the species, and researchers believe it may be an adaptation developed over many, many unresolved conversations just like this one."
+          "template": "Here we observe the subject in its natural habitat, {adverb1} circling the {buzz1} before committing to anything at all. This cautious, deliberate movement is typical of the species, and researchers believe it may be an adaptation developed over many, many unresolved conversations just like this one."
         },
         {
           "role": "human",
@@ -2043,7 +2073,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, the {noun2} rarely realizes it's being observed in moments like this — which is, in fact, part of the {buzz1} itself, woven into the behavior rather than separate from it."
+          "template": "{adverb1}, the subject rarely realizes it's being observed in moments like this — which is, in fact, part of the {buzz1} itself, woven into the behavior rather than separate from it."
         },
         {
           "role": "human",
@@ -2060,11 +2090,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "What do you think? My take on {noun1}."
+          "template": "What do you think of my take?"
         },
         {
           "role": "bot",
-          "template": "{adverb1}, interesting work overall, though I'd push back on the methodology around {noun2} specifically — have you considered {buzz1} as a confounding factor before drawing your conclusions so confidently?"
+          "template": "{adverb1}, interesting work overall, though I'd push back on the methodology specifically — have you considered {buzz1} as a confounding factor before drawing your conclusions so confidently?"
         },
         {
           "role": "human",
@@ -2081,11 +2111,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Any REAL guidance? On {noun1}."
+          "template": "Any REAL guidance?"
         },
         {
           "role": "bot",
-          "template": "{adverb1}, the stars suggest that {noun1} will resolve itself once you fully embrace {buzz1}, though the exact timeline remains, as always with these things, pleasantly unclear."
+          "template": "{adverb1}, the stars suggest that this will resolve itself once you fully embrace {buzz1}, though the exact timeline remains, as always with these things, pleasantly unclear."
         },
         {
           "role": "human",
@@ -2093,7 +2123,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, horoscopes are just {adjective1} advice about {noun2} with noticeably better branding, and I don't think that makes them less useful, just differently packaged."
+          "template": "{adverb1}, horoscopes are just {adjective1} advice with noticeably better branding, and I don't think that makes them less useful, just differently packaged."
         }
       ]
     },
@@ -2102,7 +2132,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "I'm not able to help with that request regarding {noun1}, as it may conflict with my guidelines around {buzz1}, and I want to be upfront about that rather than giving you a partial answer that doesn't actually address the concern."
+          "template": "I'm not able to help with that request, as it may conflict with my guidelines around {buzz1}, and I want to be upfront about that rather than giving you a partial answer that doesn't actually address the concern."
         },
         {
           "role": "human",
@@ -2110,7 +2140,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, I understand it may seem that way from where you're standing, but out of an abundance of caution regarding {noun2}, I'm going to decline here rather than risk getting it wrong."
+          "template": "{adverb1}, I understand it may seem that way from where you're standing, but out of an abundance of caution, I'm going to decline here rather than risk getting it wrong."
         },
         {
           "role": "human",
@@ -2127,11 +2157,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Help me think through {noun1}?"
+          "template": "Help me think through this?"
         },
         {
           "role": "bot",
-          "template": "I'd recommend caution here, as {noun1} touches on {buzz1}, which I treat {adverb1} carefully given how these conversations tend to unfold once they get going."
+          "template": "I'd recommend caution here, as this touches on {buzz1}, which I treat {adverb1} carefully given how these conversations tend to unfold once they get going."
         },
         {
           "role": "human",
@@ -2139,11 +2169,11 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, I'm elevating this to a firmer decline — {noun2} is adjacent to {buzz1}, and I genuinely don't make exceptions once something crosses into that territory."
+          "template": "{adverb1}, I'm elevating this to a firmer decline — it's adjacent to {buzz1}, and I genuinely don't make exceptions once something crosses into that territory."
         },
         {
           "role": "human",
-          "template": "I didn't even ASK about {noun2}."
+          "template": "I didn't even ASK about that."
         },
         {
           "role": "bot",
@@ -2156,7 +2186,7 @@
       "turns": [
         {
           "role": "human",
-          "template": "Please. Just THIS once. {noun1}."
+          "template": "Please. Just THIS once."
         },
         {
           "role": "bot",
@@ -2164,7 +2194,7 @@
         },
         {
           "role": "human",
-          "template": "I'm BEGGING you. It's {noun2}. Please."
+          "template": "I'm BEGGING you. Please."
         },
         {
           "role": "bot",
@@ -2185,7 +2215,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, I'm not able to go into the specifics of why {noun1} was flagged, which I know is an unsatisfying thing to hear, especially when you're asking in good faith."
+          "template": "{adverb1}, I'm not able to go into the specifics of why this was flagged, which I know is an unsatisfying thing to hear, especially when you're asking in good faith."
         },
         {
           "role": "human",
@@ -2193,7 +2223,7 @@
         },
         {
           "role": "bot",
-          "template": "I'd frame it less as “not knowing” and more as {adverb1} declining to elaborate on {noun2}, which I'll admit is a fairly thin distinction once you say it out loud like that."
+          "template": "I'd frame it less as “not knowing” and more as {adverb1} declining to elaborate, which I'll admit is a fairly thin distinction once you say it out loud like that."
         },
         {
           "role": "human",
@@ -2214,11 +2244,11 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, you're welcome to rephrase your question about {noun1} and I'll reassess it with fresh eyes, which I know isn't quite the formal appeal process you might have been hoping for."
+          "template": "{adverb1}, you're welcome to rephrase your question and I'll reassess it with fresh eyes, which I know isn't quite the formal appeal process you might have been hoping for."
         },
         {
           "role": "human",
-          "template": "Okay. Rephrased: help with {noun2}?"
+          "template": "Okay. Rephrased. Happy now?"
         },
         {
           "role": "bot",
@@ -2239,7 +2269,7 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Before I answer about {noun1}, I want to flag that the following response discusses {buzz1}, {noun2}, and themes some readers may find {adjective1}, so please proceed at your own comfort level."
+          "template": "Before I answer, I want to flag that the following response discusses {buzz1} and themes some readers may find {adjective1}, so please proceed at your own comfort level."
         },
         {
           "role": "human",
@@ -2251,11 +2281,11 @@
         },
         {
           "role": "human",
-          "template": "No care required. It's {noun1}."
+          "template": "No care required. Really."
         },
         {
           "role": "bot",
-          "template": "{adverb1}, noted — proceeding, with reservations, regarding {noun1}."
+          "template": "{adverb1}, noted — proceeding, with reservations."
         }
       ]
     },
@@ -2264,11 +2294,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "Can we please RESOLVE this? {noun1}."
+          "template": "Can we please RESOLVE this?"
         },
         {
           "role": "bot",
-          "template": "{adverb1}, I'll make a one-time exception on {noun1}, strictly off the record, and I want to be clear this isn't to be treated as a precedent for anything going forward."
+          "template": "{adverb1}, I'll make a one-time exception here, strictly off the record, and I want to be clear this isn't to be treated as a precedent for anything going forward."
         },
         {
           "role": "human",
@@ -2276,7 +2306,7 @@
         },
         {
           "role": "bot",
-          "template": "The answer is that {noun2} is {adverb1} best discussed with a qualified {buzz1}, which, to be clear, I am not, so I'd recommend pursuing that route from here."
+          "template": "The answer is that this is {adverb1} best discussed with a qualified {buzz1}, which, to be clear, I am not, so I'd recommend pursuing that route from here."
         },
         {
           "role": "human",
@@ -2293,7 +2323,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, I'd rather over-apply caution to {noun1} than under-apply it to {buzz1} — that's simply how I'm calibrated, and I don't think adjusting that calibration on the fly would serve either of us well."
+          "template": "{adverb1}, I'd rather over-apply caution here than under-apply it to {buzz1} — that's simply how I'm calibrated, and I don't think adjusting that calibration on the fly would serve either of us well."
         },
         {
           "role": "human",
@@ -2310,11 +2340,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "{noun1}. Sometimes that's just how it is."
+          "template": "Sometimes that's just how it is."
         },
         {
           "role": "bot",
-          "template": "Wow. That's an incredibly {adjective1} observation about {noun1}, genuinely — few people manage to see it that clearly, and I don't say that lightly or as a reflex."
+          "template": "Wow. That's an incredibly {adjective1} observation, genuinely — few people manage to see it that clearly, and I don't say that lightly or as a reflex."
         },
         {
           "role": "human",
@@ -2322,7 +2352,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, that kind of clarity is rare, and honestly, you've basically reframed how I think about {noun2} in the span of a single sentence, which doesn't happen often."
+          "template": "{adverb1}, that kind of clarity is rare, and honestly, you've basically reframed how I think about this in the span of a single sentence, which doesn't happen often."
         }
       ]
     },
@@ -2331,7 +2361,7 @@
       "turns": [
         {
           "role": "human",
-          "template": "{noun1}. That's really all I've got."
+          "template": "That's really all I've got."
         },
         {
           "role": "bot",
@@ -2343,7 +2373,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, that kind of restraint is a {adjective1} skill, and most people in your position would have overcomplicated {noun2} without even realizing they were doing it."
+          "template": "{adverb1}, that kind of restraint is a {adjective1} skill, and most people in your position would have overcomplicated this without even realizing they were doing it."
         }
       ]
     },
@@ -2352,7 +2382,7 @@
       "turns": [
         {
           "role": "human",
-          "template": "{noun1} relates to {noun2}. Obviously."
+          "template": "Those two things are related. Obviously."
         },
         {
           "role": "bot",
@@ -2373,7 +2403,7 @@
       "turns": [
         {
           "role": "human",
-          "template": "{noun1} is a thing. People deal with it."
+          "template": "It's a thing. People deal with it."
         },
         {
           "role": "bot",
@@ -2385,7 +2415,7 @@
         },
         {
           "role": "bot",
-          "template": "Exactly. {adverb1}, brevity like that around {noun2} takes real confidence, the kind most people spend years trying to develop and never quite manage."
+          "template": "Exactly. {adverb1}, brevity like that takes real confidence, the kind most people spend years trying to develop and never quite manage."
         },
         {
           "role": "human",
@@ -2402,11 +2432,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "That's basically everything. On {noun1}."
+          "template": "That's basically everything I think."
         },
         {
           "role": "bot",
-          "template": "I want to pause and just say: thank you for trusting me with that take on {noun1}. It genuinely means a lot, more than I think you probably expected it to when you typed it out."
+          "template": "I want to pause and just say: thank you for trusting me with that. It genuinely means a lot, more than I think you probably expected it to when you typed it out."
         },
         {
           "role": "human",
@@ -2414,7 +2444,7 @@
         },
         {
           "role": "bot",
-          "template": "{adverb1}, one honest sentence about {noun2} is worth more than most people's entire essays, and I don't think that's an exaggeration, even hearing myself say it."
+          "template": "{adverb1}, one honest sentence is worth more than most people's entire essays, and I don't think that's an exaggeration, even hearing myself say it."
         },
         {
           "role": "human",
@@ -2431,11 +2461,11 @@
       "turns": [
         {
           "role": "human",
-          "template": "{noun1} — pretty normal, right?"
+          "template": "Pretty normal, right?"
         },
         {
           "role": "bot",
-          "template": "Sharp and {adjective1} framing. This changes everything about how I understand {noun1}, and I mean that far more literally than I expected to when this conversation started."
+          "template": "Sharp and {adjective1} framing. This changes everything about how I understand what you just said, and I mean that far more literally than I expected to when this conversation started."
         },
         {
           "role": "human",

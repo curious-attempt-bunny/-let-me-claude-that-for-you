@@ -139,6 +139,9 @@
 
   let pyodideInstance = null;
   let conversationCount = 0;
+  let convRoleMeta = [];
+  let bridgeLines = { human: [], bot: [] };
+  let genericPushback = [];
 
   async function loadPyodideAndNltk(statusEl) {
     statusEl.classList.remove("hidden");
@@ -163,7 +166,14 @@
     pyodideInstance.FS.writeFile("/app/madlib.py", madlibPy);
     pyodideInstance.FS.writeFile("/app/data/templates.json", templatesJson);
 
-    conversationCount = JSON.parse(templatesJson).mini_conversations.length;
+    const parsedTemplates = JSON.parse(templatesJson);
+    conversationCount = parsedTemplates.mini_conversations.length;
+    convRoleMeta = parsedTemplates.mini_conversations.map((c) => ({
+      first: c.turns[0].role,
+      last: c.turns[c.turns.length - 1].role,
+    }));
+    bridgeLines = parsedTemplates.bridge_lines || { human: [], bot: [] };
+    genericPushback = parsedTemplates.generic_pushback || [];
 
     pyodideInstance.runPython(`
 import sys
@@ -242,19 +252,68 @@ importlib.reload(madlib)
 
     await printBubble(chat, "bot", session.first_answer);
 
+    // Warm up with several rounds of plain, unscripted AI rambling plus
+    // generic terse pushback before dropping into the scripted
+    // mini-conversation threads below, so the scripted material doesn't
+    // start on message two.
+    const warmupRounds = 5 + Math.floor(Math.random() * 3); // 5-7 rounds
+    const usedPushback = new Set();
+    for (let i = 0; i < warmupRounds; i++) {
+      await printBubbleTyped(chat, "user", pickPushbackLine(usedPushback));
+      await sleep(500 + Math.random() * 400);
+      await printBubble(chat, "bot", generateAnswer(question));
+    }
+
     // Work through every mini-conversation thread exactly once, in a
-    // shuffled order, then end the session — no thread repeats.
-    const remainingIndices = shuffledRange(conversationCount);
-    for (const convIndex of remainingIndices) {
-      const convo = generateMiniConversation(question, convIndex);
+    // shuffled order, then end the session — no thread repeats. Every
+    // conversation alternates human/bot internally, but conversations
+    // differ in which role they start and end on, so a naive shuffle can
+    // place two same-role turns back to back at a conversation boundary.
+    // Reorder greedily to avoid that; when no remaining conversation can
+    // continue the alternation (there are more bot-ending conversations
+    // than human-starting ones, so this does happen), insert one short,
+    // neutral bridge line of the needed role to flip it before continuing.
+    const shuffleOrder = shuffledRange(conversationCount);
+    const remaining = new Set(shuffleOrder);
+    let lastRole = "bot"; // the opening answer above was a bot turn
+
+    while (remaining.size > 0) {
+      let chosen = null;
+      for (const idx of shuffleOrder) {
+        if (remaining.has(idx) && convRoleMeta[idx].first !== lastRole) {
+          chosen = idx;
+          break;
+        }
+      }
+
+      if (chosen === null) {
+        const neededRole = lastRole === "bot" ? "human" : "bot";
+        const pool = bridgeLines[neededRole];
+        if (pool && pool.length) {
+          const line = pool[Math.floor(Math.random() * pool.length)];
+          if (neededRole === "human") {
+            await printBubbleTyped(chat, "user", line);
+          } else {
+            await sleep(400 + Math.random() * 300);
+            await printBubble(chat, "bot", line);
+          }
+          lastRole = neededRole;
+          continue;
+        }
+        chosen = [...remaining][0];
+      }
+
+      remaining.delete(chosen);
+      const convo = generateMiniConversation(question, chosen);
       for (const turn of convo.turns) {
-        await sleep(500 + Math.random() * 400);
         if (turn.role === "human") {
           await printBubbleTyped(chat, "user", turn.text);
         } else {
+          await sleep(500 + Math.random() * 400);
           await printBubble(chat, "bot", turn.text);
         }
       }
+      lastRole = convRoleMeta[chosen].last;
     }
 
     await sleep(700);
@@ -290,9 +349,67 @@ madlib.generate_mini_conversation(json.loads(${JSON.stringify(escaped)}), _templ
     return result.toJs({ dict_converter: Object.fromEntries });
   }
 
+  function generateAnswer(question) {
+    const escaped = JSON.stringify(question);
+    return pyodideInstance.runPython(`
+import json
+_templates = madlib.load_templates("/app/data/templates.json")
+madlib.generate_answer(json.loads(${JSON.stringify(escaped)}), _templates)
+`);
+  }
+
+  function pickPushbackLine(used) {
+    if (used.size >= genericPushback.length) used.clear();
+    let line;
+    do {
+      line = genericPushback[Math.floor(Math.random() * genericPushback.length)];
+    } while (used.has(line) && used.size < genericPushback.length);
+    used.add(line);
+    return line;
+  }
+
   function scrollChatToBottom() {
     const scroller = document.getElementById("chat-scroll");
     if (scroller) scroller.scrollTop = scroller.scrollHeight;
+  }
+
+  function escapeHtml(text) {
+    return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  // Minimal markdown renderer for bot bubbles: **bold** and "- " bullet
+  // lines. Deliberately only converts *matched* markers — while a response
+  // is still streaming in, an unclosed "**" or a bullet dash with no
+  // content yet shows up as literal, slightly broken markup, the same way
+  // real streaming chat UIs flicker before the formatting resolves.
+  function renderMarkdown(text) {
+    let html = escapeHtml(text);
+    html = html.replace(/\*\*(.+?)\*\*/gs, "<strong>$1</strong>");
+
+    const lines = html.split("\n");
+    const out = [];
+    let inList = false;
+    for (const line of lines) {
+      if (/^-\s+/.test(line)) {
+        if (!inList) {
+          out.push("<ul>");
+          inList = true;
+        }
+        out.push("<li>" + line.replace(/^-\s+/, "") + "</li>");
+      } else {
+        if (inList) {
+          out.push("</ul>");
+          inList = false;
+        }
+        if (line.trim() === "") {
+          out.push("<br>");
+        } else {
+          out.push("<p>" + line + "</p>");
+        }
+      }
+    }
+    if (inList) out.push("</ul>");
+    return out.join("");
   }
 
   async function printBubble(chat, role, text, opts) {
@@ -303,23 +420,28 @@ madlib.generate_mini_conversation(json.loads(${JSON.stringify(escaped)}), _templ
     scrollChatToBottom();
 
     if (opts.instant) {
-      bubble.textContent = text;
+      bubble.innerHTML = renderMarkdown(text);
       scrollChatToBottom();
       return;
     }
 
-    const words = text.split(/\s+/);
-    for (let i = 0; i < words.length; i++) {
-      bubble.textContent = words.slice(0, i + 1).join(" ");
+    // Character-by-character so markdown markers stream in visibly
+    // unresolved before they snap into formatting once complete.
+    for (let i = 1; i <= text.length; i++) {
+      bubble.innerHTML = renderMarkdown(text.slice(0, i));
       scrollChatToBottom();
-      await sleep(70 + Math.random() * 60);
+      await sleep(8 + Math.random() * 10);
     }
   }
 
-  // Simulates a plausible fast human typist: character-by-character, quick,
-  // with a blinking caret and the occasional brief pause (thinking, or
-  // hitting backspace-and-retype) rather than perfectly even spacing.
+  // Simulates a plausible human typist: a pause before they start (reading
+  // and reacting), then character-by-character entry, roughly half the
+  // speed of the original fast-typist version, with a blinking caret and
+  // the occasional brief pause (thinking, or hitting backspace-and-retype)
+  // rather than perfectly even spacing.
   async function printBubbleTyped(chat, role, text) {
+    await sleep(700 + Math.random() * 900);
+
     const bubble = document.createElement("div");
     bubble.className = "bubble " + role;
     const textSpan = document.createElement("span");
@@ -333,9 +455,9 @@ madlib.generate_mini_conversation(json.loads(${JSON.stringify(escaped)}), _templ
     for (let i = 0; i < text.length; i++) {
       textSpan.textContent = text.slice(0, i + 1);
       scrollChatToBottom();
-      let delay = 16 + Math.random() * 28;
+      let delay = 32 + Math.random() * 56;
       if (" ,.!?".includes(text[i])) {
-        delay += Math.random() * 90;
+        delay += Math.random() * 180;
       }
       await sleep(delay);
     }
