@@ -368,9 +368,16 @@ madlib.generate_answer(json.loads(${JSON.stringify(escaped)}), _templates)
     return line;
   }
 
+  // Only auto-scroll to the latest message if the user is already near
+  // the bottom, so scrolling up to reread earlier messages isn't fought
+  // by the streaming content snapping back down.
   function scrollChatToBottom() {
     const scroller = document.getElementById("chat-scroll");
-    if (scroller) scroller.scrollTop = scroller.scrollHeight;
+    if (!scroller) return;
+    const distanceFromBottom = scroller.scrollHeight - scroller.scrollTop - scroller.clientHeight;
+    if (distanceFromBottom < 150) {
+      scroller.scrollTop = scroller.scrollHeight;
+    }
   }
 
   function escapeHtml(text) {
