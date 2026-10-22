@@ -842,7 +842,7 @@
       "turns": [
         {
           "role": "human",
-          "template": "What does '{buzz1}' even mean here? You used it like it explains {noun1}."
+          "template": "What does “{buzz1}” even mean here? You used it like it explains {noun1}."
         },
         {
           "role": "bot",
@@ -955,7 +955,7 @@
         },
         {
           "role": "human",
-          "template": "That's not an example, that's the same sentence again with 'imagine' in front of it."
+          "template": "That's not an example, that's the same sentence again with “imagine” in front of it."
         },
         {
           "role": "bot",
@@ -1014,7 +1014,7 @@
         },
         {
           "role": "bot",
-          "template": "As a language model, I aim to be {adjective1} and {adverb1} helpful, though 'straight answer' can mean different things for {noun1}."
+          "template": "As a language model, I aim to be {adjective1} and {adverb1} helpful, though “straight answer” can mean different things for {noun1}."
         },
         {
           "role": "human",
