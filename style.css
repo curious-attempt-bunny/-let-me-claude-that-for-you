@@ -296,3 +296,15 @@ footer.note img {
   margin-top: 8px;
   opacity: 0.85;
 }
+footer.note .credits {
+  margin-top: 6px;
+  font-size: 0.74rem;
+  opacity: 0.85;
+}
+footer.note .credits a {
+  color: var(--orange-dark);
+  text-decoration: none;
+}
+footer.note .credits a:hover {
+  text-decoration: underline;
+}

@@ -21,13 +21,16 @@
     const linkResult = document.getElementById("link-result");
     const copyBtn = document.getElementById("copy-link-btn");
     const copyStatus = document.getElementById("copy-status");
+    const jumpParodyBtn = document.getElementById("jump-parody-btn");
 
     let generatedUrl = "";
+    let currentQuestion = "";
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       const question = input.value.trim();
       if (!question) return;
+      currentQuestion = question;
 
       const url = new URL(window.location.href);
       url.search = "";
@@ -46,6 +49,13 @@
       } catch (err) {
         copyStatus.textContent = generatedUrl;
       }
+    });
+
+    jumpParodyBtn.addEventListener("click", function () {
+      if (!currentQuestion) return;
+      jumpParodyBtn.disabled = true;
+      landingView.classList.add("hidden");
+      startParodyMode(currentQuestion);
     });
   }
 
@@ -224,22 +234,24 @@ importlib.reload(madlib)
 
     await printBubble(chat, "bot", session.first_answer);
 
-    for (const [noLine, followUp] of session.exchanges) {
-      await sleep(600);
-      await printBubble(chat, "user", noLine);
-      await sleep(600);
-      await printBubble(chat, "bot", followUp);
-    }
-
-    // Keep the loop going forever with freshly generated escalation once
-    // the canned list runs out, cycling intensity back up each lap.
+    // Work through mini-conversation threads forever, avoiding repeating
+    // the same thread twice in a row.
+    let lastConvIndex = -1;
     while (true) {
-      const extra = generateSession(question);
-      for (const [noLine, followUp] of extra.exchanges) {
-        await sleep(600);
-        await printBubble(chat, "user", noLine);
-        await sleep(600);
-        await printBubble(chat, "bot", followUp);
+      let convIndex = Math.floor(Math.random() * 10);
+      if (convIndex === lastConvIndex) {
+        convIndex = (convIndex + 1) % 10;
+      }
+      lastConvIndex = convIndex;
+
+      const convo = generateMiniConversation(question, convIndex);
+      for (const turn of convo.turns) {
+        await sleep(500 + Math.random() * 400);
+        if (turn.role === "human") {
+          await printBubbleTyped(chat, "user", turn.text);
+        } else {
+          await printBubble(chat, "bot", turn.text);
+        }
       }
     }
   }
@@ -250,6 +262,16 @@ importlib.reload(madlib)
 import json
 _templates = madlib.load_templates("/app/data/templates.json")
 madlib.generate_session(json.loads(${JSON.stringify(escaped)}), _templates)
+`);
+    return result.toJs({ dict_converter: Object.fromEntries });
+  }
+
+  function generateMiniConversation(question, convIndex) {
+    const escaped = JSON.stringify(question);
+    const result = pyodideInstance.runPython(`
+import json
+_templates = madlib.load_templates("/app/data/templates.json")
+madlib.generate_mini_conversation(json.loads(${JSON.stringify(escaped)}), _templates, conv_index=${convIndex})
 `);
     return result.toJs({ dict_converter: Object.fromEntries });
   }
@@ -278,5 +300,32 @@ madlib.generate_session(json.loads(${JSON.stringify(escaped)}), _templates)
       scrollChatToBottom();
       await sleep(70 + Math.random() * 60);
     }
+  }
+
+  // Simulates a plausible fast human typist: character-by-character, quick,
+  // with a blinking caret and the occasional brief pause (thinking, or
+  // hitting backspace-and-retype) rather than perfectly even spacing.
+  async function printBubbleTyped(chat, role, text) {
+    const bubble = document.createElement("div");
+    bubble.className = "bubble " + role;
+    const textSpan = document.createElement("span");
+    const caret = document.createElement("span");
+    caret.className = "cursor-caret";
+    bubble.appendChild(textSpan);
+    bubble.appendChild(caret);
+    chat.appendChild(bubble);
+    scrollChatToBottom();
+
+    for (let i = 0; i < text.length; i++) {
+      textSpan.textContent = text.slice(0, i + 1);
+      scrollChatToBottom();
+      let delay = 16 + Math.random() * 28;
+      if (" ,.!?".includes(text[i])) {
+        delay += Math.random() * 90;
+      }
+      await sleep(delay);
+    }
+
+    caret.remove();
   }
 })();

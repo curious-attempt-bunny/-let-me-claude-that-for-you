@@ -20,6 +20,7 @@
     </form>
     <div id="link-result" class="actions hidden" style="margin-top: 16px;">
       <button id="copy-link-btn" class="btn primary">Copy Link</button>
+      <button id="jump-parody-btn" class="btn">Skip to Parody Mode</button>
       <span id="copy-status" class="status"></span>
     </div>
   </section>
@@ -42,6 +43,13 @@
 
   <footer class="note" id="page-footer">
     <p>Unofficial parody. Not affiliated with Anthropic. "Claude" and "claude.ai" belong to their respective owner.</p>
+    <p class="credits">
+      Parody answers are generated in your browser with
+      <a href="https://pyodide.org/" target="_blank" rel="noopener">Pyodide</a>
+      (<a href="https://www.python.org/" target="_blank" rel="noopener">CPython</a>
+      compiled to WebAssembly) and
+      <a href="https://www.nltk.org/" target="_blank" rel="noopener">NLTK</a>.
+    </p>
     <img src="https://visitor-badge.laobi.icu/badge?page_id=curious-attempt-bunny.let-me-claude-that-for-you" alt="visitor count" height="20" />
   </footer>
 </div>

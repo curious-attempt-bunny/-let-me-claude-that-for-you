@@ -41,24 +41,37 @@ def main():
         session = madlib.generate_session(q, templates)
         if not session["first_answer"]:
             failures.append(f"No first_answer for: {q!r}")
-        if len(session["exchanges"]) != len(templates["no_variants"]):
-            failures.append("Exchange count mismatch")
-        for no_line, follow_up in session["exchanges"]:
-            if "{" in follow_up or "}" in follow_up:
-                failures.append(f"Unfilled placeholder in follow-up: {follow_up!r}")
-            if not no_line.strip():
-                failures.append("Empty no_line")
 
         print(f"Q: {q}")
         print(f"  nouns found: {nouns}")
-        print(f"  A: {answer}")
+        print(f"  opening: {session['first_answer']}")
         print()
 
-    # Check escalation intensity roughly increases (more caps / exclamation marks later on)
-    no_variants = templates["no_variants"]
-    intensities = [v.count("!") + sum(1 for c in v if c.isupper()) for v in no_variants]
-    if intensities[-1] <= intensities[0]:
-        failures.append("Escalation intensity does not increase from first to last 'No!' variant")
+    # Every mini-conversation must render cleanly for every sample question,
+    # with no leftover {placeholder} braces and no empty lines.
+    num_conversations = len(templates["mini_conversations"])
+    if num_conversations < 10:
+        failures.append(f"Expected at least 10 mini_conversations, found {num_conversations}")
+
+    for q in QUESTIONS:
+        for i in range(num_conversations):
+            convo = madlib.generate_mini_conversation(q, templates, conv_index=i)
+            if not convo["turns"]:
+                failures.append(f"Empty turns for conversation {i} on {q!r}")
+            for turn in convo["turns"]:
+                if turn["role"] not in ("human", "bot"):
+                    failures.append(f"Unexpected role {turn['role']!r} in conversation {convo['id']}")
+                if "{" in turn["text"] or "}" in turn["text"]:
+                    failures.append(f"Unfilled placeholder in {convo['id']}: {turn['text']!r}")
+                if not turn["text"].strip():
+                    failures.append(f"Empty turn text in {convo['id']}")
+
+    print(f"Rendered {num_conversations} mini-conversations x {len(QUESTIONS)} questions cleanly.")
+    print()
+    sample = madlib.generate_mini_conversation(QUESTIONS[0], templates, conv_index=0)
+    print(f"Sample conversation ({sample['id']}):")
+    for turn in sample["turns"]:
+        print(f"  {turn['role']}: {turn['text']}")
 
     if failures:
         print("FAILURES:")
@@ -66,6 +79,7 @@ def main():
             print(f" - {f}")
         sys.exit(1)
 
+    print()
     print("All offline checks passed.")
 
 
