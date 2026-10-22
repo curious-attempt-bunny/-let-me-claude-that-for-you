@@ -292,3 +292,7 @@ footer.note {
   text-align: center;
   margin-top: 8px;
 }
+footer.note img {
+  margin-top: 8px;
+  opacity: 0.85;
+}
