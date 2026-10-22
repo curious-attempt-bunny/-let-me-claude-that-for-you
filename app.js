@@ -21,7 +21,6 @@
     const linkResult = document.getElementById("link-result");
     const copyBtn = document.getElementById("copy-link-btn");
     const copyStatus = document.getElementById("copy-status");
-    const jumpParodyBtn = document.getElementById("jump-parody-btn");
     const jumpParodyBtnInitial = document.getElementById("jump-parody-btn-initial");
 
     let generatedUrl = "";
@@ -56,17 +55,13 @@
       }
     });
 
-    function jumpToParody() {
+    jumpParodyBtnInitial.addEventListener("click", function () {
       const question = input.value.trim();
       if (!question) return;
-      jumpParodyBtn.disabled = true;
       jumpParodyBtnInitial.disabled = true;
       landingView.classList.add("hidden");
       startParodyMode(question);
-    }
-
-    jumpParodyBtn.addEventListener("click", jumpToParody);
-    jumpParodyBtnInitial.addEventListener("click", jumpToParody);
+    });
   }
 
   function sleep(ms) {
