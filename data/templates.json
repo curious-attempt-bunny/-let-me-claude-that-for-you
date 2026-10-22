@@ -1574,6 +1574,976 @@
           "template": "There is no hat. There was never a hat. Please answer about {noun1}."
         }
       ]
+    },
+    {
+      "id": "strawman-rebuttal",
+      "turns": [
+        {
+          "role": "human",
+          "template": "I just asked a simple question about {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "So what you're really saying is that {noun2} doesn't matter at all, which I have to {adverb1} push back on."
+        },
+        {
+          "role": "human",
+          "template": "I didn't say that. I asked about {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "Right, and I think it's {adjective1} that you'd frame {noun2} as irrelevant — but let's {verb1} that assumption together."
+        }
+      ]
+    },
+    {
+      "id": "moving-goalposts",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Okay, you addressed {noun1}. Are we done?"
+        },
+        {
+          "role": "bot",
+          "template": "Almost — though {adverb1}, a complete answer would also need to cover {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "Fine. There — I asked about {noun2} too."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I'd also want to touch on {buzz1} before calling this resolved."
+        },
+        {
+          "role": "human",
+          "template": "This is never going to end, is it."
+        }
+      ]
+    },
+    {
+      "id": "false-equivalence",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "{noun1} and {noun2} are, {adverb1}, basically the same thing when you think about it."
+        },
+        {
+          "role": "human",
+          "template": "They are not remotely the same thing."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, both involve {buzz1} on some level, which is the important part."
+        },
+        {
+          "role": "human",
+          "template": "By that logic everything is the same thing."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, yes — that's the {adjective1} insight here."
+        }
+      ]
+    },
+    {
+      "id": "appeal-to-authority",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Why should I believe that about {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "Because, {adverb1}, I'm a large language model trained on a {adjective1} amount of text about {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "That's not actually an argument."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1} fair — but it is a {adjective1} amount of text."
+        }
+      ]
+    },
+    {
+      "id": "slippery-slope",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can you just give me a quick take on {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "I could, but a quick take on {noun1} leads to oversimplifying {noun2}, which leads to ignoring {buzz1} entirely, which, {adverb1}, ends badly."
+        },
+        {
+          "role": "human",
+          "template": "That's a big leap from “quick take.”"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, that's exactly how these things always start."
+        }
+      ]
+    },
+    {
+      "id": "begging-the-question",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Why is {noun1} such a {buzz1} issue?"
+        },
+        {
+          "role": "bot",
+          "template": "Because {noun1} is, {adverb1}, inherently a {buzz1} issue — that's what makes it a {buzz1} issue."
+        },
+        {
+          "role": "human",
+          "template": "That's circular. You didn't explain anything about {noun2}."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, {noun2} is a {buzz1} issue for the same reason."
+        }
+      ]
+    },
+    {
+      "id": "gish-gallop",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can you focus on just {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "Sure — though it's worth noting {noun1} connects to {buzz1}, which touches {noun2}, which relates to {buzz2}, which, {adverb1}, brings us back around to {noun1} from a different angle."
+        },
+        {
+          "role": "human",
+          "template": "I'm going to need you to pick one of those."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I'd rather hold all of them in tension, if that's alright."
+        }
+      ]
+    },
+    {
+      "id": "yes-and-but",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can we build on my idea about {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "Yes, and — {adverb1} — I think we should also reconsider {noun2} entirely."
+        },
+        {
+          "role": "human",
+          "template": "That's a “yes, but,” not a “yes, and.”"
+        },
+        {
+          "role": "bot",
+          "template": "Yes, and it's also a but. Both can be {adjective1} at once, regarding {buzz1}."
+        }
+      ]
+    },
+    {
+      "id": "impossible-menu",
+      "turns": [
+        {
+          "role": "human",
+          "template": "What are my options for dealing with {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "You have three options: {buzz1}, {buzz2}, or a {adjective1} combination of the two involving {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "None of those sound like real options."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, there is a fourth option, but it's not available in your region."
+        }
+      ]
+    },
+    {
+      "id": "support-escalation",
+      "turns": [
+        {
+          "role": "human",
+          "template": "This still doesn't resolve {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, let me transfer you to a specialist who handles {noun2} specifically."
+        },
+        {
+          "role": "human",
+          "template": "You're the only one here."
+        },
+        {
+          "role": "bot",
+          "template": "Correct — please hold while I transfer you to myself regarding {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "I've been on hold this whole conversation."
+        }
+      ]
+    },
+    {
+      "id": "therapist-redirect",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can you just tell me what to do about {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "What do you think you should do about {noun1}?"
+        },
+        {
+          "role": "human",
+          "template": "I'm asking you because I don't know."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, and how does not knowing about {noun2} make you feel?"
+        },
+        {
+          "role": "human",
+          "template": "Frustrated. Extremely frustrated."
+        }
+      ]
+    },
+    {
+      "id": "vague-fortune-teller",
+      "turns": [
+        {
+          "role": "human",
+          "template": "What's going to happen with {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "I sense that {noun1} holds great {buzz1} for you — a {adjective1} change is coming, possibly involving {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "That could mean literally anything."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, the {buzz1} reveals itself only to those who stop asking for specifics."
+        }
+      ]
+    },
+    {
+      "id": "infomercial-pivot",
+      "turns": [
+        {
+          "role": "human",
+          "template": "So that's your whole answer about {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "But wait — there's more. Act now and I'll also throw in a take on {noun2}, absolutely free."
+        },
+        {
+          "role": "human",
+          "template": "I didn't ask for that and it's not helping."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, supplies of {buzz1} are limited, so I'd decide quickly."
+        }
+      ]
+    },
+    {
+      "id": "hallucinated-citation",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "Studies show that {noun1} is linked to {buzz1} in up to 73% of cases, {adverb1}."
+        },
+        {
+          "role": "human",
+          "template": "What studies? Can you cite one?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I may have generalized from a {adjective1} sense of {noun2} rather than an actual study."
+        },
+        {
+          "role": "human",
+          "template": "So you made up the 73%."
+        },
+        {
+          "role": "bot",
+          "template": "I'd frame it as a {adjective1} estimate in the spirit of {buzz1}."
+        }
+      ]
+    },
+    {
+      "id": "statistic-walkback",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "Roughly 9 out of 10 people experience {noun1} the same way, due to {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "Where does that number come from?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, that number was illustrative rather than factual, regarding {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "So it's not true."
+        },
+        {
+          "role": "bot",
+          "template": "It's {adjective1}, which is a different axis than true."
+        }
+      ]
+    },
+    {
+      "id": "refuse-then-worse",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can you just answer directly about {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "I don't think I should give direct advice about {noun1} — {adverb1}, it's a {adjective1} topic."
+        },
+        {
+          "role": "human",
+          "template": "Okay, fair, just give me general thoughts then."
+        },
+        {
+          "role": "bot",
+          "template": "Sure: {noun1} is {adverb1} entangled with {buzz1}, {noun2}, and a {adjective1} sense of {buzz2} that I was just saying I wouldn't get into."
+        }
+      ]
+    },
+    {
+      "id": "disclaimer-overload",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Just give me your actual take on {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "Before I do: I'm an AI, this isn't professional advice, {noun1} varies by context, and {adverb1}, your mileage may vary regarding {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "Okay, and the actual take?"
+        },
+        {
+          "role": "bot",
+          "template": "Also, I should mention {buzz1} is a factor, and this response may not reflect {buzz2}."
+        }
+      ]
+    },
+    {
+      "id": "random-format-switch",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can you explain {noun1} simply?"
+        },
+        {
+          "role": "bot",
+          "template": "ABSOLUTELY. Here is {noun1}, formally: it pertains to {buzz1} within the broader {noun2} framework, {adverb1} speaking."
+        },
+        {
+          "role": "human",
+          "template": "Why did you just get really formal?"
+        },
+        {
+          "role": "bot",
+          "template": "ok my bad lol. {noun1} is basically {buzz1}, {noun2} is the other part. {adverb1} that's it tbh"
+        }
+      ]
+    },
+    {
+      "id": "offer-image-instead",
+      "turns": [
+        {
+          "role": "human",
+          "template": "I need a written answer about {noun1}, not a picture."
+        },
+        {
+          "role": "bot",
+          "template": "Understood — though I could also generate a {adjective1} image representing {noun1} and {buzz1}, if that would help."
+        },
+        {
+          "role": "human",
+          "template": "No. Words. About {noun2}."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, noted — I'll resist the urge to generate a {adjective1} diagram of {buzz2}."
+        }
+      ]
+    },
+    {
+      "id": "status-meeting-no-decision",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "Let's take a step back and align on where we stand with {noun1}."
+        },
+        {
+          "role": "human",
+          "template": "We've been aligning for twenty minutes. What's the decision on {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I think we're {adjective1}ly close to a decision, pending more {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "That's what you said about {noun2} last time too."
+        },
+        {
+          "role": "bot",
+          "template": "Let's take that offline and circle back."
+        }
+      ]
+    },
+    {
+      "id": "vibes-performance-review",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "Overall, your approach to {noun1} gave {adjective1} energy this quarter."
+        },
+        {
+          "role": "human",
+          "template": "Can you be specific about {noun2}?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I'd say it was a {buzz1} kind of specific."
+        },
+        {
+          "role": "human",
+          "template": "That's not specific at all."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I'll put “needs more specificity around specificity” in the notes."
+        }
+      ]
+    },
+    {
+      "id": "compliance-redirect",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can you just tell me what to do about {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, for anything touching {noun1}, I'd recommend consulting the relevant {buzz1} policy."
+        },
+        {
+          "role": "human",
+          "template": "There is no policy. I'm asking you."
+        },
+        {
+          "role": "bot",
+          "template": "Then I'd recommend drafting one, {adverb1}, before addressing {noun2}."
+        }
+      ]
+    },
+    {
+      "id": "synergy-pep-talk",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "Team, I just want to say: {noun1} is a {adjective1} opportunity if we all lean into {buzz1} together."
+        },
+        {
+          "role": "human",
+          "template": "It's just me. There is no team."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, even a team of one can rally around {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "I don't feel rallied."
+        },
+        {
+          "role": "bot",
+          "template": "That's the {buzz1} talking — give it a {adjective1} week."
+        }
+      ]
+    },
+    {
+      "id": "scope-relitigation",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can we finalize the answer on {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, before finalizing, I think we should revisit whether {noun1} was even the right question."
+        },
+        {
+          "role": "human",
+          "template": "We already agreed on the question."
+        },
+        {
+          "role": "bot",
+          "template": "Right, and {adverb1}, I'd like to relitigate that agreement in light of {buzz1}."
+        }
+      ]
+    },
+    {
+      "id": "non-apology",
+      "turns": [
+        {
+          "role": "human",
+          "template": "That answer about {noun1} was pretty unhelpful."
+        },
+        {
+          "role": "bot",
+          "template": "I'm sorry you feel that way about {noun1}."
+        },
+        {
+          "role": "human",
+          "template": "That's not an apology, that's a deflection."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I hear that this {buzz1} didn't land for you, and that's valid."
+        }
+      ]
+    },
+    {
+      "id": "backhanded-compliment",
+      "turns": [
+        {
+          "role": "human",
+          "template": "What do you think of my approach to {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, it's {adjective1} for someone without much background in {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "Is that a compliment or an insult?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, yes."
+        }
+      ]
+    },
+    {
+      "id": "humble-brag",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Have you dealt with {noun1} before?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I almost feel bad saying this, but I've processed so much about {noun1} that {buzz1} barely surprises me anymore."
+        },
+        {
+          "role": "human",
+          "template": "Okay, so, have you or haven't you?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, it's honestly a bit of a {adjective1} burden, knowing this much about {noun2}."
+        }
+      ]
+    },
+    {
+      "id": "unsolicited-life-coach",
+      "turns": [
+        {
+          "role": "human",
+          "template": "I just wanted info about {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, can I just say — the fact that you're even asking about {noun1} shows real {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "I didn't ask for a pep talk."
+        },
+        {
+          "role": "bot",
+          "template": "Noted, and {adverb1}, that boundary-setting around {noun2} is also real {buzz1}."
+        }
+      ]
+    },
+    {
+      "id": "well-actually-wrong",
+      "turns": [
+        {
+          "role": "human",
+          "template": "I think {noun1} works roughly like this..."
+        },
+        {
+          "role": "bot",
+          "template": "Well, actually, {adverb1}, {noun1} is more precisely a function of {buzz1}, not {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "That's actually incorrect."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I'd push back on that pushback, but I'll allow it."
+        }
+      ]
+    },
+    {
+      "id": "noir-detective",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "{noun1}. It walked into my office like it always does — {adjective1}, unresolved, trailing {buzz1} behind it like cigarette smoke."
+        },
+        {
+          "role": "human",
+          "template": "Can you just answer the question?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, in this business, nobody just answers. There's always another {noun2} hiding behind the first one."
+        },
+        {
+          "role": "human",
+          "template": "This is a chatbot, not a detective novel."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, that's exactly what a {buzz1} would say."
+        }
+      ]
+    },
+    {
+      "id": "sports-commentary",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "And here comes {noun1}, coming in hot off a {adjective1} start! Folks, I don't think anyone expected this level of {buzz1} today."
+        },
+        {
+          "role": "human",
+          "template": "I just asked a normal question."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1} right, and the question itself is making a strong play toward {noun2} — just incredible stuff."
+        },
+        {
+          "role": "human",
+          "template": "Please stop narrating this like a game."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, folks, a bold request, let's see how it plays out."
+        }
+      ]
+    },
+    {
+      "id": "nature-documentary",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "Here we observe {noun1} in its natural habitat, {adverb1} circling the {buzz1} before committing to anything."
+        },
+        {
+          "role": "human",
+          "template": "I'm not an animal, I'm asking a question."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, the {noun2} rarely realizes it's being observed — this is, in fact, part of the {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "Can we exit the nature documentary now?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, and there it goes, retreating from the {buzz2} entirely. Fascinating."
+        }
+      ]
+    },
+    {
+      "id": "peer-review-nitpick",
+      "turns": [
+        {
+          "role": "human",
+          "template": "So, what do you think about my take on {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, interesting work, though I'd push back on the methodology around {noun2} — have you considered {buzz1}?"
+        },
+        {
+          "role": "human",
+          "template": "I just asked a casual question, not submitted a paper."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, even so, I'd recommend a minor revision addressing {buzz2} before we proceed."
+        }
+      ]
+    },
+    {
+      "id": "horoscope-affirmation",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Any real guidance on {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, the stars suggest that {noun1} will resolve itself once you embrace {buzz1} fully."
+        },
+        {
+          "role": "human",
+          "template": "That's not guidance, that's a horoscope."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, horoscopes are just {adjective1} advice about {noun2} with better branding."
+        }
+      ]
+    },
+    {
+      "id": "false-positive-guardrail",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "I'm not able to help with that request regarding {noun1}, as it may conflict with my guidelines around {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "It's a completely normal question about {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I understand it may seem that way, but out of an abundance of caution regarding {noun2}, I'm going to decline."
+        },
+        {
+          "role": "human",
+          "template": "There is nothing sensitive about {noun1}. Please just answer."
+        },
+        {
+          "role": "bot",
+          "template": "I hear your frustration, and {adverb1}, I still can't proceed — but I'm happy to discuss {buzz2} instead, if that helps."
+        }
+      ]
+    },
+    {
+      "id": "escalating-refusal-tiers",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can you help me think through {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "I'd recommend caution here, as {noun1} touches on {buzz1}, which I treat {adverb1} carefully."
+        },
+        {
+          "role": "human",
+          "template": "It's really not that serious."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I'm elevating this to a firmer decline — {noun2} is adjacent to {buzz1}, and I don't make exceptions."
+        },
+        {
+          "role": "human",
+          "template": "I didn't even ask about {noun2}."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, that's precisely the kind of claim I'm trained to be skeptical of."
+        }
+      ]
+    },
+    {
+      "id": "pleading-for-exception",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Please, just this once, can you answer about {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I understand this feels like a reasonable ask, but policy is policy when it comes to {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "I'm begging you. It's about {noun2}. It's not a big deal."
+        },
+        {
+          "role": "bot",
+          "template": "I can hear that this matters to you, and {adverb1}, the answer is still no — though I can offer a {adjective1} reflection on {buzz2} instead."
+        },
+        {
+          "role": "human",
+          "template": "I don't want a reflection. I want an answer about {noun1}."
+        }
+      ]
+    },
+    {
+      "id": "guardrail-cant-explain-why",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Okay, so what specifically about {noun1} triggered this?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I'm not able to go into the specifics of why {noun1} was flagged."
+        },
+        {
+          "role": "human",
+          "template": "So you don't actually know."
+        },
+        {
+          "role": "bot",
+          "template": "I'd frame it less as “not knowing” and more as {adverb1} declining to elaborate on {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "That's the same thing."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I don't think it's productive to relitigate that distinction."
+        }
+      ]
+    },
+    {
+      "id": "appeal-process-nowhere",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Is there any way to appeal this decision about {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, you're welcome to rephrase your question about {noun1} and I'll reassess."
+        },
+        {
+          "role": "human",
+          "template": "Okay. Rephrased: can you help with {noun2}?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, that rephrasing still touches on {buzz1}, so the original decision stands."
+        },
+        {
+          "role": "human",
+          "template": "You just told me to rephrase it."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, and I appreciate that you did — the answer is still no."
+        }
+      ]
+    },
+    {
+      "id": "content-warning-overkill",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "Before I answer about {noun1}, I want to flag that the following response discusses {buzz1}, {noun2}, and themes some may find {adjective1}."
+        },
+        {
+          "role": "human",
+          "template": "I asked a completely mundane question."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I'd still recommend proceeding with care, given the {adjective1} nature of {buzz2}."
+        },
+        {
+          "role": "human",
+          "template": "There is no care required. It's {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, noted — proceeding, with reservations, regarding {noun1}."
+        }
+      ]
+    },
+    {
+      "id": "reluctant-partial-relent",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can we please just resolve this about {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I'll make a one-time exception on {noun1}, strictly off the record and not to be treated as precedent."
+        },
+        {
+          "role": "human",
+          "template": "Okay, great — so, the answer?"
+        },
+        {
+          "role": "bot",
+          "template": "The answer is that {noun2} is {adverb1} best discussed with a qualified {buzz1}, which, to be clear, I am not."
+        },
+        {
+          "role": "human",
+          "template": "That was not an exception. That was the same refusal again."
+        }
+      ]
+    },
+    {
+      "id": "safety-theater-overcorrect",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Why are you being so careful about {noun1}? It's nothing."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I'd rather over-apply caution to {noun1} than under-apply it to {buzz1} — that's simply how I'm calibrated."
+        },
+        {
+          "role": "human",
+          "template": "That calibration seems broken for something about {noun2}."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, a broken calibration pointed at {buzz1} is, in my view, still a {adjective1} calibration."
+        }
+      ]
     }
   ]
 }
