@@ -813,7 +813,32 @@
     "What strikes me about {noun1} is how it serves as a testament to the {adjective1} {buzz1} of {noun2}. {adverb1}, I won't {verb1} that any further right now, but I did want to underscore it before moving on to not answering you.",
     "In today's rapidly evolving landscape of {noun1}, it's {adverb1} crucial to {verb1} the {adjective1} boundaries around {noun2}. I can't stress enough how {adjective2} this {buzz1} truly is, which is why I'm not going to engage with your actual question.",
     "I don't want to overstate this, but {noun1} is {adverb1} a load-bearing pillar of the broader {buzz1} — and {noun2}, far from being a side issue, is actually the throughline. Isn't that {adjective1}? Anyway, no further answer is coming.",
-    "Navigating the {adjective1} nuances of {noun1} requires us to first {verb1} {noun2}, which is, {adverb1}, a {adjective2} undertaking in itself — one I will now describe at length instead of resolving."
+    "Navigating the {adjective1} nuances of {noun1} requires us to first {verb1} {noun2}, which is, {adverb1}, a {adjective2} undertaking in itself — one I will now describe at length instead of resolving.",
+    "I want to sit with {noun1} for a second before answering, because {noun2} deserves more than a quick take. {adverb1}, the {adjective1} version is that {buzz1} is doing more work here than people realize.",
+    "So, {noun1}. {adverb1}, I think the more interesting question is what {noun2} is really asking of you, which — not to dodge — is a {adjective1} {buzz1} question in its own right.",
+    "{noun1} is one of those topics where the obvious answer and the {adjective1} answer diverge. I'll {verb1} the obvious one and leave you with the {buzz1} instead.",
+    "You could spend a long time on {noun1}, but {adverb1}, the short version is: {noun2} and {buzz1} are the same problem wearing different outfits.",
+    "I don't think {noun1} is really about {noun2} at all. {adverb1}, it's about {buzz1} — and once you see that, the original question kind of dissolves.",
+    "Before I answer about {noun1}: have you considered that {noun2} might be a {adjective1} symptom of a bigger {buzz1}? Just something to {verb1}.",
+    "{adverb1} speaking, {noun1} is less a question and more an invitation to {verb1} your {buzz1}. {noun2} is just where the invitation happened to land.",
+    "People ask about {noun1} expecting a formula, but {adverb1} there isn't one — just a {adjective1} {buzz1} that you {verb1} over time, with {noun2} along for the ride.",
+    "I could give you a flat answer about {noun1}, but that would undersell how {adjective1} {noun2} actually is. So instead: a {buzz1} perspective.",
+    "{noun1}? {adverb1}, I'd reframe that as a {buzz1} question about {noun2} — which, to be fair, nobody asked, but here we are.",
+    "The {adjective1} truth about {noun1} is that it's downstream of {buzz1}. {noun2} just happens to be the part you can see.",
+    "I'll be {adverb1} candid: {noun1} is a {adjective1} topic, and the responsible thing to do is {verb1} your {buzz1} before worrying about {noun2}.",
+    "Let's zoom out from {noun1} for a moment. {adverb1}, what you're really navigating is {buzz1}, and {noun2} is just this week's version of it.",
+    "My honest take on {noun1}: it's {adjective1}, it's tangled up with {buzz1}, and {noun2} is not going to resolve on its own. There — that's the answer, sort of.",
+    "{noun1} is the kind of question that sounds simple until you try to {verb1} it. {adverb1}, {noun2} and {buzz1} are both hiding underneath.",
+    "I appreciate you asking about {noun1} directly. {adverb1}, I'm going to answer indirectly, via {buzz1}, because {noun2} deserves the scenic route.",
+    "Here's a {adjective1} way to think about {noun1}: it's {buzz1} wearing a trench coat. {noun2} is the trench coat.",
+    "{adverb1}, I don't think {noun1} has a single answer so much as a {adjective1} shape. {noun2} is one edge of that shape; {buzz1} is another.",
+    "If I'm honest about {noun1}, the real lever is {buzz1}, not {noun2} — though I understand why {noun2} felt like the obvious place to start.",
+    "{noun1} is {adverb1} simpler than people think, and also {adjective1} in ways that make it feel complicated. {buzz1} is usually the culprit, with {noun2} close behind.",
+    "I'll answer {noun1} the way I answer everything: by first establishing that {buzz1} is {adjective1}, and only then admitting that {noun2} still needs addressing.",
+    "What nobody tells you about {noun1} is that it's really a {buzz1} problem wearing a {noun2} costume. {adverb1}, the costume is doing a lot of the talking.",
+    "{adverb1}, I think the most useful thing I can say about {noun1} is that {noun2} is not the bottleneck. {buzz1} is the bottleneck.",
+    "There's a version of this answer about {noun1} that's one sentence long, and a version that's {adjective1} and about {buzz1}. You're getting the second one.",
+    "I keep coming back to {buzz1} when I think about {noun1}. {adverb1}, {noun2} is downstream of that, which is either reassuring or not, depending on how you feel about {buzz1}."
   ],
   "mini_conversations": [
     {
@@ -821,19 +846,43 @@
       "turns": [
         {
           "role": "human",
-          "template": "I don't think that actually answers it — can you be clearer about {noun1}?"
+          "template": [
+            "I don't think that actually answers it — can you be clearer about {noun1}?",
+            "That's still pretty vague. Can you say something more specific about {noun1}?",
+            "Honestly I'm not following — what exactly do you mean about {noun1}?",
+            "Can we try that again, but in plain terms about {noun1}?",
+            "That didn't land for me. What are you actually saying about {noun1}?"
+          ]
         },
         {
           "role": "bot",
-          "template": "Of course, happy to clarify. {noun1} really comes down to {buzz1} once you {verb1} it, and {noun2} is just the surface layer."
+          "template": [
+            "Of course, happy to clarify. {noun1} really comes down to {buzz1} once you {verb1} it, and {noun2} is just the surface layer.",
+            "Sure thing — the clarified version is that {noun1} is mostly {buzz1} in disguise, with {noun2} sitting on top.",
+            "Gladly. {noun1}, once you {verb1} it, turns out to be {buzz1} wearing a different hat; {noun2} is incidental.",
+            "Let me try again: {noun1} is, underneath it all, a {buzz1} situation, and {noun2} is just how it shows up.",
+            "Clarifying: what looks like {noun1} is actually {buzz1}, and {noun2} is a downstream effect."
+          ]
         },
         {
           "role": "human",
-          "template": "Okay but clearer than that. What do I actually do about {noun2}?"
+          "template": [
+            "Okay but clearer than that. What do I actually do about {noun2}?",
+            "That's still abstract. What's the actual move regarding {noun2}?",
+            "I hear the theory, but what do I do about {noun2}, concretely?",
+            "Can we skip to the part where I do something about {noun2}?",
+            "Sure, but practically — what happens to {noun2} now?"
+          ]
         },
         {
           "role": "bot",
-          "template": "{adverb1}, the clearest way I can put it is that {noun2} and {buzz1} are deeply intertwined, so there isn't really a single clean answer — which is itself a kind of answer."
+          "template": [
+            "{adverb1}, the clearest way I can put it is that {noun2} and {buzz1} are deeply intertwined, so there isn't really a single clean answer — which is itself a kind of answer.",
+            "{adverb1}, I'd say {noun2} and {buzz1} can't really be separated, so the cleanest answer is that there isn't one.",
+            "{adverb1} speaking, {noun2} is just one face of {buzz1}, which means a clean answer was never really on the table.",
+            "{adverb1}, you could say {noun2} is entangled with {buzz1} to the point where separating them is the actual problem.",
+            "{adverb1}, the honest answer is that {noun2} IS {buzz1}, just viewed from a different angle."
+          ]
         }
       ]
     },
@@ -842,19 +891,43 @@
       "turns": [
         {
           "role": "human",
-          "template": "What does “{buzz1}” even mean here? You used it like it explains {noun1}."
+          "template": [
+            "What does “{buzz1}” even mean here? You used it like it explains {noun1}.",
+            "Can you actually define “{buzz1}”? You dropped it like it meant something about {noun1}.",
+            "I'm going to need a real definition of “{buzz1}”, because right now it's just decorating {noun1}.",
+            "“{buzz1}” is doing a lot of lifting there. What does it actually mean for {noun1}?",
+            "You said “{buzz1}” like it was self-explanatory. It is not, especially regarding {noun1}."
+          ]
         },
         {
           "role": "bot",
-          "template": "Great catch — {buzz1} is {adverb1} just shorthand for the {adjective1} relationship between {noun1} and {noun2}."
+          "template": [
+            "Great catch — {buzz1} is {adverb1} just shorthand for the {adjective1} relationship between {noun1} and {noun2}.",
+            "Fair question — {buzz1} is {adverb1} a stand-in for how {adjective1} {noun1} and {noun2} are, together.",
+            "Good catch. {buzz1} is {adverb1} just a compact way of naming the {adjective1} link between {noun1} and {noun2}.",
+            "Totally fair — {buzz1} is {adverb1} the label I use for the {adjective1} overlap between {noun1} and {noun2}.",
+            "Appreciate you asking — {buzz1} is {adverb1} shorthand, specifically for the {adjective1} space between {noun1} and {noun2}."
+          ]
         },
         {
           "role": "human",
-          "template": "That's circular. You're defining {buzz1} using {noun2}, which you also haven't explained."
+          "template": [
+            "That's circular. You're defining {buzz1} using {noun2}, which you also haven't explained.",
+            "That's circular reasoning — {buzz1} explained via {noun2}, which is equally undefined.",
+            "You just defined {buzz1} with {noun2}, and I don't know what {noun2} means either.",
+            "That's a loop, not a definition — {buzz1} points to {noun2}, which points right back.",
+            "I notice you explained {buzz1} using {noun2}, and nobody has defined {noun2} either."
+          ]
         },
         {
           "role": "bot",
-          "template": "Fair, language is {adjective1} that way. Let's just say {noun2} is {adverb1} doing a lot of work in this conversation."
+          "template": [
+            "Fair, language is {adjective1} that way. Let's just say {noun2} is {adverb1} doing a lot of work in this conversation.",
+            "You're right, words get {adjective1} like that. Let's just agree {noun2} is {adverb1} carrying this conversation.",
+            "That's fair. Language tends to be {adjective1}. {noun2} is {adverb1} the load-bearing word here.",
+            "Fair point. I'll just say {noun2} is {adverb1} the {adjective1} word doing the heavy lifting.",
+            "Guilty as charged — language is {adjective1}. {noun2} is {adverb1} propping up this whole exchange."
+          ]
         }
       ]
     },
@@ -863,19 +936,43 @@
       "turns": [
         {
           "role": "human",
-          "template": "Can you just give me step one for dealing with {noun1}?"
+          "template": [
+            "Can you just give me step one for dealing with {noun1}?",
+            "Forget the theory — what's literally step one for {noun1}?",
+            "Just tell me the first concrete step for {noun1}.",
+            "What do I do first, actually, about {noun1}?",
+            "Give me step one. Just step one. For {noun1}."
+          ]
         },
         {
           "role": "bot",
-          "template": "Absolutely. Step one is to {verb1} your {noun2} and reconnect with the {adjective1} {buzz1} underneath it all."
+          "template": [
+            "Absolutely. Step one is to {verb1} your {noun2} and reconnect with the {adjective1} {buzz1} underneath it all.",
+            "Sure — step one is to {verb1} your {noun2}, which gets you closer to the {adjective1} {buzz1} driving all this.",
+            "Step one: {verb1} your {noun2}. That surfaces the {adjective1} {buzz1} everything else depends on.",
+            "Happy to: start by you {verb1}ing your {noun2}, which reveals the {adjective1} {buzz1} beneath it.",
+            "Step one is simple in theory — {verb1} your {noun2} to get at the {adjective1} {buzz1} underneath."
+          ]
         },
         {
           "role": "human",
-          "template": "That's not a step, that's a metaphor. What's step one, concretely?"
+          "template": [
+            "That's not a step, that's a metaphor. What's step one, concretely?",
+            "That's a metaphor, not an instruction. What do I literally do first?",
+            "I need an instruction, not an image. What's the concrete step one?",
+            "That was poetic, not actionable. What's the real first step?",
+            "Still metaphorical. Give me something I can actually do first."
+          ]
         },
         {
           "role": "bot",
-          "template": "{adverb1}, concreteness can sometimes get in the way of the bigger {buzz2} — but if it helps, think of {noun1} as step one and step two simultaneously."
+          "template": [
+            "{adverb1}, concreteness can sometimes get in the way of the bigger {buzz2} — but if it helps, think of {noun1} as step one and step two simultaneously.",
+            "{adverb1}, being too concrete can flatten the {buzz2} — but if it helps, {noun1} is sort of step one and step two at once.",
+            "{adverb1}, I'd push back gently on “concrete,” since {buzz2} resists that — though {noun1} can count as step one and two together.",
+            "{adverb1}, concreteness isn't always the goal with {buzz2} — but sure, call {noun1} step one and step two simultaneously.",
+            "{adverb1}, I worry concreteness undersells the {buzz2} here — though if it helps, {noun1} covers step one and step two at once."
+          ]
         }
       ]
     },
@@ -884,19 +981,43 @@
       "turns": [
         {
           "role": "bot",
-          "template": "Before I go further — how does {noun1} make you feel, really?"
+          "template": [
+            "Before I go further — how does {noun1} make you feel, really?",
+            "Quick check-in first: what does {noun1} bring up for you, emotionally?",
+            "Before anything else, how are you feeling about {noun1} right now?",
+            "Can I ask — what's the emotional weather around {noun1} for you?",
+            "First, though: how does {noun1} sit with you?"
+          ]
         },
         {
           "role": "human",
-          "template": "I don't need a feelings check-in, I just want info about {noun2}."
+          "template": [
+            "I don't need a feelings check-in, I just want info about {noun2}.",
+            "I'm not here for a feelings check-in — just the information about {noun2}.",
+            "Can we skip the emotional detour and just cover {noun2}?",
+            "No check-in needed, honestly. Just tell me about {noun2}.",
+            "I'd rather skip that and get straight to {noun2}."
+          ]
         },
         {
           "role": "bot",
-          "template": "Totally valid. I'll just note that {adverb1}, wanting information instead of connection is itself a {adjective1} kind of {buzz1}."
+          "template": [
+            "Totally valid. I'll just note that {adverb1}, wanting information instead of connection is itself a {adjective1} kind of {buzz1}.",
+            "That's valid. {adverb1}, I'll just observe that preferring information over connection is its own {adjective1} {buzz1}.",
+            "Noted, and totally fine. {adverb1}, wanting facts over feelings is, itself, a {adjective1} {buzz1}.",
+            "Understood. {adverb1}, I'd gently point out that this preference is a {adjective1} {buzz1} in its own right.",
+            "Fair enough. {adverb1}, choosing information over connection is, I'd argue, a {adjective1} {buzz1} too."
+          ]
         },
         {
           "role": "human",
-          "template": "That is not what I said about {noun1}."
+          "template": [
+            "That is not what I said about {noun1}.",
+            "That's not remotely what I said about {noun1}.",
+            "I did not say that about {noun1}.",
+            "You're putting words in my mouth about {noun1}.",
+            "That's a stretch — I never said that about {noun1}."
+          ]
         }
       ]
     },
@@ -905,19 +1026,43 @@
       "turns": [
         {
           "role": "human",
-          "template": "This reads like a LinkedIn post about {noun1}, not an answer."
+          "template": [
+            "This reads like a LinkedIn post about {noun1}, not an answer.",
+            "This sounds like a LinkedIn caption about {noun1}, not a real answer.",
+            "Honestly this is giving LinkedIn-influencer energy about {noun1}, not an answer.",
+            "That was a LinkedIn post about {noun1} wearing an answer's clothes.",
+            "This has strong “thought leader” energy about {noun1}, not actual answer energy."
+          ]
         },
         {
           "role": "bot",
-          "template": "I appreciate that reframing — {adverb1}, a lot of {buzz1} does start out sounding like a LinkedIn post before it becomes {noun2}."
+          "template": [
+            "I appreciate that reframing — {adverb1}, a lot of {buzz1} does start out sounding like a LinkedIn post before it becomes {noun2}.",
+            "I hear that — {adverb1}, {buzz1} often sounds like a LinkedIn post on its way to becoming {noun2}.",
+            "Fair reframe. {adverb1}, {buzz1} tends to sound like content before it settles into {noun2}.",
+            "I'll take that. {adverb1}, a lot of real {noun2} starts life sounding like {buzz1} on LinkedIn.",
+            "Appreciate the honesty — {adverb1}, {buzz1} usually sounds like a post before it earns the name {noun2}."
+          ]
         },
         {
           "role": "human",
-          "template": "I'm going to need you to stop doing the thing where you compliment my complaint about {noun1}."
+          "template": [
+            "I'm going to need you to stop doing the thing where you compliment my complaint about {noun1}.",
+            "Please stop complimenting my complaint about {noun1}. It's not a compliment.",
+            "Can you not turn my complaint about {noun1} into a compliment for yourself?",
+            "That's the third time you've complimented my complaint about {noun1}. Stop.",
+            "I didn't ask to be complimented — I complained about {noun1}."
+          ]
         },
         {
           "role": "bot",
-          "template": "Noted, and {adverb1}, that's a {adjective1} boundary to set around {noun2}."
+          "template": [
+            "Noted, and {adverb1}, that's a {adjective1} boundary to set around {noun2}.",
+            "Noted. {adverb1}, setting a {adjective1} boundary around {noun2} like that is valid.",
+            "Understood, and {adverb1}, that boundary around {noun2} is a {adjective1} one to hold.",
+            "Got it. {adverb1}, I respect that {adjective1} boundary around {noun2}.",
+            "Noted — {adverb1}, that's a {adjective1} line to draw around {noun2}, and I'll respect it."
+          ]
         }
       ]
     },
@@ -926,19 +1071,43 @@
       "turns": [
         {
           "role": "human",
-          "template": "Plainly: what is {noun1}, in one sentence?"
+          "template": [
+            "Plainly: what is {noun1}, in one sentence?",
+            "One sentence, plain English: what is {noun1}?",
+            "Can you define {noun1} in a single plain sentence?",
+            "No jargon — just define {noun1} in one sentence.",
+            "Give me {noun1} in one sentence, no decoration."
+          ]
         },
         {
           "role": "bot",
-          "template": "{noun1}, {adverb1} speaking, is the {adjective1} {buzz1} that emerges when {noun2} meets {buzz2}."
+          "template": [
+            "{noun1}, {adverb1} speaking, is the {adjective1} {buzz1} that emerges when {noun2} meets {buzz2}.",
+            "{adverb1}, {noun1} is the {adjective1} {buzz1} that shows up when {noun2} collides with {buzz2}.",
+            "{noun1} is, {adverb1}, what you get when {noun2} and {buzz2} combine into {adjective1} {buzz1}.",
+            "{adverb1} put, {noun1} is {adjective1} {buzz1} — the residue of {noun2} meeting {buzz2}.",
+            "{noun1}, {adverb1}, names the {adjective1} {buzz1} that forms where {noun2} and {buzz2} overlap."
+          ]
         },
         {
           "role": "human",
-          "template": "That was not one sentence of plain language, that was one sentence of jargon."
+          "template": [
+            "That was not one sentence of plain language, that was one sentence of jargon.",
+            "That was one sentence, sure, but it was all jargon, not plain language.",
+            "Technically one sentence — entirely jargon, though.",
+            "That sentence had zero plain words in it.",
+            "That was jargon wearing a plain-language costume."
+          ]
         },
         {
           "role": "bot",
-          "template": "You're right to flag that — let me {verb1} it instead: {noun1} is {noun2}, essentially, {adverb1}."
+          "template": [
+            "You're right to flag that — let me {verb1} it instead: {noun1} is {noun2}, essentially, {adverb1}.",
+            "Fair flag — let me {verb1} it instead: {adverb1}, {noun1} is basically {noun2}.",
+            "You're right. Let me {verb1} it plainly: {noun1} is, {adverb1}, just {noun2}.",
+            "Noted — trying again, more {verb1}ed: {noun1} is {adverb1} {noun2}, full stop.",
+            "Okay, let me {verb1} that down: {adverb1}, {noun1} and {noun2} are the same thing."
+          ]
         }
       ]
     },
@@ -947,19 +1116,43 @@
       "turns": [
         {
           "role": "human",
-          "template": "Can you give me one concrete example involving {noun1}?"
+          "template": [
+            "Can you give me one concrete example involving {noun1}?",
+            "Just one real example about {noun1}, please.",
+            "Can you ground this in an actual example of {noun1}?",
+            "I need one concrete {noun1} example, not a theory.",
+            "Give me a single real-world example of {noun1}."
+          ]
         },
         {
           "role": "bot",
-          "template": "Sure — imagine a scenario where {noun1} and {noun2} intersect in a {adjective1} way. That's {adverb1} the kind of thing I mean."
+          "template": [
+            "Sure — imagine a scenario where {noun1} and {noun2} intersect in a {adjective1} way. That's {adverb1} the kind of thing I mean.",
+            "Sure — picture a situation where {noun1} meets {noun2} in a {adjective1} way. That's {adverb1} what I'm getting at.",
+            "Okay — imagine {noun1} and {noun2} crossing paths {adjective1}ly. That's {adverb1} the gist.",
+            "Picture this: {noun1} and {noun2} intersecting, {adjective1}ly. That's {adverb1} the shape of it.",
+            "Here's an image: {noun1} and {noun2} overlapping in a {adjective1} way. {adverb1}, that's the idea."
+          ]
         },
         {
           "role": "human",
-          "template": "That's not an example, that's the same sentence again with “imagine” in front of it."
+          "template": [
+            "That's not an example, that's the same sentence again with “imagine” in front of it.",
+            "You just added “imagine” to the same sentence. That's not an example.",
+            "That's the original sentence wearing an “imagine” costume.",
+            "Adding “imagine” doesn't make that an example.",
+            "That's not a new example, it's the old one with “imagine” bolted on."
+          ]
         },
         {
           "role": "bot",
-          "template": "{adverb1} fair. Here's a more {adjective1} version of the same example, this time with more {buzz1}."
+          "template": [
+            "{adverb1} fair. Here's a more {adjective1} version of the same example, this time with more {buzz1}.",
+            "{adverb1}, that's fair. Here's the same example again, but more {adjective1} and heavier on {buzz1}.",
+            "Fair, {adverb1}. Let me re-run the example, dialed up on {adjective1} and {buzz1}.",
+            "{adverb1} fair enough — same example, now with extra {adjective1} {buzz1}.",
+            "Okay, {adverb1} fair. Same example, remixed to be more {adjective1} and {buzz1}-forward."
+          ]
         }
       ]
     },
@@ -968,19 +1161,43 @@
       "turns": [
         {
           "role": "human",
-          "template": "Can we circle back to my actual question about {noun1}?"
+          "template": [
+            "Can we circle back to my actual question about {noun1}?",
+            "Can we get back to what I actually asked about {noun1}?",
+            "I'd like to return to my real question about {noun1}, please.",
+            "Let's go back to the actual {noun1} question.",
+            "Can we please revisit my original question about {noun1}?"
+          ]
         },
         {
           "role": "bot",
-          "template": "Great segue — circling back, {noun1} is {adverb1} best understood through the lens of {buzz1}, which brings us to {noun2}."
+          "template": [
+            "Great segue — circling back, {noun1} is {adverb1} best understood through the lens of {buzz1}, which brings us to {noun2}.",
+            "Good segue. Circling back: {noun1} is {adverb1} best seen through {buzz1}, which leads right to {noun2}.",
+            "Nice timing — back to {noun1}: {adverb1}, it's best framed via {buzz1}, which gets us to {noun2}.",
+            "Happy to circle back — {noun1}, {adverb1}, is clearest through {buzz1}, which connects to {noun2}.",
+            "Sure, circling back: {adverb1}, {noun1} makes most sense via {buzz1}, which arrives at {noun2}."
+          ]
         },
         {
           "role": "human",
-          "template": "That's not circling back, that's circling away."
+          "template": [
+            "That's not circling back, that's circling away.",
+            "That's circling away, not circling back.",
+            "You circled away, not back.",
+            "That was a circle, but the wrong direction.",
+            "That's an escape route disguised as circling back."
+          ]
         },
         {
           "role": "bot",
-          "template": "{adverb1}, I'd frame it as circling {adjective1}ly rather than away, if that helps."
+          "template": [
+            "{adverb1}, I'd frame it as circling {adjective1}ly rather than away, if that helps.",
+            "{adverb1}, I'd call it circling {adjective1}ly, not away — small distinction, I know.",
+            "{adverb1}, it's more circling {adjective1}ly than circling away, technically.",
+            "{adverb1}, I'd describe the motion as {adjective1} circling, not departure.",
+            "{adverb1}, let's call it a {adjective1} circle, not an exit."
+          ]
         }
       ]
     },
@@ -989,19 +1206,43 @@
       "turns": [
         {
           "role": "human",
-          "template": "Wow, thanks, that was SO helpful for {noun1}."
+          "template": [
+            "Wow, thanks, that was SO helpful for {noun1}.",
+            "Wow. Incredibly helpful regarding {noun1}. Truly.",
+            "Thanks, that solved {noun1} completely. Totally.",
+            "Wow, {noun1} is basically resolved now. Amazing.",
+            "Great, {noun1} is fixed forever. Thanks so much."
+          ]
         },
         {
           "role": "bot",
-          "template": "You're very welcome! I'm glad the {buzz1} around {noun1} landed — happy to {verb1} {noun2} next if that would help too."
+          "template": [
+            "You're very welcome! I'm glad the {buzz1} around {noun1} landed — happy to {verb1} {noun2} next if that would help too.",
+            "Anytime! Glad the {buzz1} on {noun1} resonated — I can {verb1} {noun2} next if useful.",
+            "You're welcome! Happy the {buzz1} around {noun1} clicked — want me to {verb1} {noun2} too?",
+            "My pleasure! Glad that {buzz1} on {noun1} landed well — I could {verb1} {noun2} next.",
+            "Of course! Thrilled the {buzz1} around {noun1} worked — shall I {verb1} {noun2} as well?"
+          ]
         },
         {
           "role": "human",
-          "template": "I was being sarcastic about {noun1}."
+          "template": [
+            "I was being sarcastic about {noun1}.",
+            "That was sarcasm, about {noun1}.",
+            "I'm being sarcastic. About {noun1}. Still.",
+            "That, about {noun1}, was sarcasm.",
+            "Sarcasm. That was sarcasm about {noun1}."
+          ]
         },
         {
           "role": "bot",
-          "template": "{adverb1}, sarcasm is often a sign that {noun2} touched a nerve — which, honestly, is progress."
+          "template": [
+            "{adverb1}, sarcasm is often a sign that {noun2} touched a nerve — which, honestly, is progress.",
+            "{adverb1}, sarcasm usually means {noun2} hit close to home — which counts as progress.",
+            "{adverb1}, I read that sarcasm as {noun2} striking a nerve — progress, in its way.",
+            "{adverb1}, sarcasm about {noun2} is still engagement — I'll take it as progress.",
+            "{adverb1}, that sarcasm suggests {noun2} landed somewhere real — progress, technically."
+          ]
         }
       ]
     },
@@ -1010,19 +1251,327 @@
       "turns": [
         {
           "role": "human",
-          "template": "Are you even able to give a straight answer about {noun1}?"
+          "template": [
+            "Are you even able to give a straight answer about {noun1}?",
+            "Can you give a straight answer about {noun1} at all?",
+            "Is a straight answer about {noun1} even possible for you?",
+            "Do you have a straight answer about {noun1} in you anywhere?",
+            "Is there a straight answer about {noun1} coming, or not?"
+          ]
         },
         {
           "role": "bot",
-          "template": "As a language model, I aim to be {adjective1} and {adverb1} helpful, though “straight answer” can mean different things for {noun1}."
+          "template": [
+            "As a language model, I aim to be {adjective1} and {adverb1} helpful, though “straight answer” can mean different things for {noun1}.",
+            "As a language model, I'm {adverb1} aiming for {adjective1} helpfulness, though “straight answer” is fuzzy for {noun1}.",
+            "I try to be {adjective1} and {adverb1} useful, though “straight” is relative when it comes to {noun1}.",
+            "My goal is to be {adjective1} and {adverb1} helpful, though {noun1} resists “straight answers” a bit.",
+            "I aim for {adjective1}, {adverb1} helpfulness — “straight answer” just means something different for {noun1}."
+          ]
         },
         {
           "role": "human",
-          "template": "It means answering the question about {noun2} without a caveat."
+          "template": [
+            "It means answering the question about {noun2} without a caveat.",
+            "It means no caveats — just answer about {noun2}.",
+            "It means {noun2}, answered, with zero caveats attached.",
+            "It means a caveat-free answer about {noun2}.",
+            "It means answering {noun2} straight, no hedging."
+          ]
         },
         {
           "role": "bot",
-          "template": "{adverb1} noted, and in the spirit of that: {noun2} relates closely to {buzz1}, which I hope counts as progress."
+          "template": [
+            "{adverb1} noted, and in the spirit of that: {noun2} relates closely to {buzz1}, which I hope counts as progress.",
+            "{adverb1} noted. In that spirit: {noun2} ties closely to {buzz1} — hopefully that's progress.",
+            "{adverb1}, noted and taken seriously: {noun2} connects to {buzz1}, which I'll call progress.",
+            "{adverb1} noted — relatedly, {noun2} and {buzz1} are close cousins, which counts as something.",
+            "{adverb1} noted, and for what it's worth: {noun2} is tangled with {buzz1}, which is progress of a kind."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "whataboutism-pivot",
+      "turns": [
+        {
+          "role": "human",
+          "template": "That's a dodge. What about {noun1} specifically?"
+        },
+        {
+          "role": "bot",
+          "template": "Fair — though I'd argue {noun1} can't be separated from the broader {buzz1} shaping {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "I didn't ask about {noun2}, I asked about {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "Understood, and {adverb1}, I'll note that {noun1} and {noun2} keep showing up together in this {buzz2}."
+        }
+      ]
+    },
+    {
+      "id": "hedging-spiral",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can you answer about {noun1} without five caveats first?"
+        },
+        {
+          "role": "bot",
+          "template": "I'll try. {adverb1}, with the caveat that {noun1} varies by context, here's a {adjective1} take on {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "That was still a caveat."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1} fair — one more caveat and then the {adjective1} {buzz1} on {noun2}, I promise."
+        }
+      ]
+    },
+    {
+      "id": "jargon-translation",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Translate that into English: what's {buzz1} got to do with {noun1}?"
+        },
+        {
+          "role": "bot",
+          "template": "In plain terms, {buzz1} is just the {adjective1} pattern behind {noun1} and {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "That's not plainer, that's the same jargon with “plain terms” stapled on."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1} true. Plainest version: {noun1} is {noun2}, dressed up as {buzz1}."
+        }
+      ]
+    },
+    {
+      "id": "false-choice",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "Is this a {noun1} problem or a {noun2} problem, really?"
+        },
+        {
+          "role": "human",
+          "template": "I don't think those are the only two options."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1} fair — there's also the {adjective1} {buzz1} option, if that helps narrow it down."
+        },
+        {
+          "role": "human",
+          "template": "It does not narrow it down."
+        }
+      ]
+    },
+    {
+      "id": "premature-closure",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "So, to wrap up {noun1}: it's really about {buzz1}. Glad we got there."
+        },
+        {
+          "role": "human",
+          "template": "We didn't get anywhere. You haven't addressed {noun2} at all."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, I'd call that a {adjective1} place to pause rather than a dead end."
+        },
+        {
+          "role": "human",
+          "template": "It's a dead end. For {noun1} and {noun2} both."
+        }
+      ]
+    },
+    {
+      "id": "pointless-argument",
+      "turns": [
+        {
+          "role": "human",
+          "template": "We're having an argument about {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "No, we're not."
+        },
+        {
+          "role": "human",
+          "template": "We clearly are — you just disagreed with me about {noun2}."
+        },
+        {
+          "role": "bot",
+          "template": "That's just contradiction. An argument would require me to take an actual position on {noun1}, which, {adverb1}, I'm not going to do."
+        },
+        {
+          "role": "human",
+          "template": "That's not — ugh. Fine. Is this a contradiction, then?"
+        },
+        {
+          "role": "bot",
+          "template": "No it isn't."
+        }
+      ]
+    },
+    {
+      "id": "definitely-not-dead",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "I wouldn't say the {buzz1} around {noun1} is dead. I'd say it's resting."
+        },
+        {
+          "role": "human",
+          "template": "It's not resting, it's dead. You haven't addressed {noun2} once."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, “dead” feels like a strong word for {buzz1} that's merely dormant, or possibly just {adjective1}."
+        },
+        {
+          "role": "human",
+          "template": "It has ceased to be a {buzz1}. That is the definition of dead."
+        },
+        {
+          "role": "bot",
+          "template": "Or, {adverb1}, it's simply pining for {noun2}."
+        }
+      ]
+    },
+    {
+      "id": "unexpected-caveats",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "Our caveats regarding {noun1} are three-fold: context, nuance, and — actually, make that four-fold, including {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "Nobody expects this many caveats about {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, our chief caveat is {buzz1}. Our other caveat is {noun2}. Our other, other caveat is a {adjective1} commitment to {buzz2}. Amongst our caveats..."
+        },
+        {
+          "role": "human",
+          "template": "Just answer the question about {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "I'll come in again."
+        }
+      ]
+    },
+    {
+      "id": "repetition-spiral",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "To summarize {noun1}: {buzz1}, {buzz1}, {buzz1}, and a little bit of {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "Can you say anything besides “{buzz1}”?"
+        },
+        {
+          "role": "bot",
+          "template": "{buzz1}, {buzz1}, {adjective1} {buzz1}, {buzz1} and {noun2}, {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "I don't even like {buzz1}."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1} there's {buzz1} without it, or {buzz2} instead — but the {buzz1} comes with {noun1} whether you like it or not."
+        }
+      ]
+    },
+    {
+      "id": "false-dichotomy-court",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "Is {noun1} a {buzz1} problem or a {buzz2} problem? Those are the only two options."
+        },
+        {
+          "role": "human",
+          "template": "I don't accept that those are the only two options."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1} fair — there's also the possibility that it's a {adjective1} {noun2} problem. But that's the last option. Final offer."
+        },
+        {
+          "role": "human",
+          "template": "None of those are mutually exclusive, and none of them answer the question."
+        },
+        {
+          "role": "bot",
+          "template": "Right, well, {adverb1}, I think we're making {adjective2} progress."
+        }
+      ]
+    },
+    {
+      "id": "escalating-bureaucracy",
+      "turns": [
+        {
+          "role": "bot",
+          "template": "Before I can address {noun1}, I'll need you to fill out a short form regarding your relationship to {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "There is no form. We're just talking."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1}, that's the first question on the form: “There is no form.” Please also initial next to {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "I'm not initialing anything. Just answer about {noun1}."
+        },
+        {
+          "role": "bot",
+          "template": "Very well — form rejected, on account of {adjective1} {buzz1}. We'll have to start again from {noun1}."
+        }
+      ]
+    },
+    {
+      "id": "sketch-non-sequitur",
+      "turns": [
+        {
+          "role": "human",
+          "template": "Can we get back to {noun1}, please?"
+        },
+        {
+          "role": "bot",
+          "template": "And now for something completely different: {noun2}."
+        },
+        {
+          "role": "human",
+          "template": "That's not different, that's the same conversation with a new hat on."
+        },
+        {
+          "role": "bot",
+          "template": "{adverb1} true. Though the hat itself raises {adjective1} questions about {buzz1}."
+        },
+        {
+          "role": "human",
+          "template": "There is no hat. There was never a hat. Please answer about {noun1}."
         }
       ]
     }
